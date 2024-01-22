@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Link
       href="/"
-      className="font-bold italic tracking-widest hover:text-primary-800"
+      className="font-bold italic tracking-widest text-stone-600 hover:text-black"
     >
       Blossom.dev
     </Link>

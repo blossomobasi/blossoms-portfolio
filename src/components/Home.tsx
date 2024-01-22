@@ -4,7 +4,7 @@ import TechStack from "./TechStack";
 const Home = () => {
   return (
     <section id="home" className="p-2 md:mb-0 mb-20">
-      <div className="flex items-center pt-10 gap-x-10 flex-col-reverse lg:flex-row">
+      <div className="flex items-center md:pt-10 gap-x-10 flex-col-reverse lg:flex-row">
         <div className="text-sm w-full text-center md:text-left">
           <p>Hey there 👋🏻</p> {/* Lovely to meet you */}
           <h1 className="md:text-5xl text-3xl font-extrabold">
@@ -20,7 +20,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="relative md:w-1/2 h-full">
+        <div className="relative md:w-1/2 h-full -z-10">
           <Image
             src="/images/tech-guy.png"
             alt="Tech guy"
