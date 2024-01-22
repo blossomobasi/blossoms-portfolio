@@ -52,16 +52,14 @@ const NavBar = () => {
 
       {/* Mobile screen */}
       {showNav && (
-        <nav
-          className={`bg-white top-0 left-0 absolute h-screen font-medium w-[65%] z-50 transition ease-in-out duration-300`}
-        >
+        <nav className="bg-white top-0 left-0 absolute h-screen font-medium w-[65%] z-50 transition ease-in-out duration-300 sm:hidden">
           <ul className="p-2  flex flex-col items-center gap-y-10 pt-20  text-stone-600">
             {navLinks.map((link, i) => {
               return (
                 <Link
                   onClick={() => setIsActive(i)}
-                  className={`hover:text-black focus-within:text-black hover:bg-slate-100 w-28 rounded-sm py-1 text-center ${
-                    isActive === i && "bg-slate-100"
+                  className={`hover:bg-slate-100 w-28 rounded-sm py-1 text-center ${
+                    isActive === i && "bg-slate-100 text-black"
                   }`}
                   key={link.href}
                   href={link.href}
