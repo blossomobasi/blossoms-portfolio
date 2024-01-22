@@ -9,6 +9,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [isActive, setIsActive] = useState(0);
 
   const onClose = () => setShowNav((show) => !show);
 
@@ -25,10 +26,11 @@ const NavBar = () => {
 
       <nav className="sm:block hidden">
         <ul className="space-x-8 font-medium text-stone-600">
-          {navLinks.map((link) => {
+          {navLinks.map((link, i) => {
             return (
               <Link
-                className="hover:text-black focus-within:text-black"
+                onClick={() => setIsActive(i)}
+                className={`hover:text-black ${isActive === i && "text-black"}`}
                 key={link.href}
                 href={link.href}
               >
@@ -51,13 +53,16 @@ const NavBar = () => {
       {/* Mobile screen */}
       {showNav && (
         <nav
-          className={`bg-slate-100 top-0 left-0 absolute h-screen font-medium w-[65%] z-50 transition ease-in-out duration-300`}
+          className={`bg-white top-0 left-0 absolute h-screen font-medium w-[65%] z-50 transition ease-in-out duration-300`}
         >
           <ul className="p-2  flex flex-col items-center gap-y-10 pt-20  text-stone-600">
-            {navLinks.map((link) => {
+            {navLinks.map((link, i) => {
               return (
                 <Link
-                  className="hover:text-black focus-within:text-black hover:bg-slate-200 w-28 rounded-sm py-1 text-center"
+                  onClick={() => setIsActive(i)}
+                  className={`hover:text-black focus-within:text-black hover:bg-slate-100 w-28 rounded-sm py-1 text-center ${
+                    isActive === i && "bg-slate-100"
+                  }`}
                   key={link.href}
                   href={link.href}
                 >

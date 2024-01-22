@@ -1,3 +1,7 @@
+"use client";
+
+import { Typewriter } from "react-simple-typewriter";
+
 import Image from "next/image";
 import TechStack from "./TechStack";
 
@@ -6,7 +10,16 @@ const Home = () => {
     <section id="home" className="p-2 md:mb-0 mb-20">
       <div className="flex items-center md:pt-10 gap-x-10 flex-col-reverse lg:flex-row">
         <div className="text-sm w-full text-center md:text-left">
-          <p>Hey there 👋🏻</p> {/* Lovely to meet you */}
+          <div className="mb-5 text-lg font-medium italic">
+            <Typewriter
+              words={["Hey There👋🏻", "Lovely meeting you😊"]}
+              cursor={true}
+              cursorStyle="_"
+              typeSpeed={100}
+              deleteSpeed={100}
+              loop={true}
+            />
+          </div>
           <h1 className="md:text-5xl text-3xl font-extrabold">
             Front-End React Developer
           </h1>

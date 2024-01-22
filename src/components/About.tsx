@@ -5,9 +5,9 @@ import AboutSlice3 from "./AboutSlice3";
 const About = () => {
   return (
     <section className="md:pt-28" id="about">
-      <div className="uppercase font-extrabold text-stone-600 relative w-fit mb-10 text-xl italic">
+      <div className="uppercase font-extrabold text-stone-600 relative w-fit mb-10 text-xl italic -z-10">
         About me
-        {/* <div className="absolute h-0.5 w-full bg-primary-800" /> */}
+        <div className="absolute h-0.5 w-full bg-stone-600" />
       </div>
 
       <AboutSlice1 />
