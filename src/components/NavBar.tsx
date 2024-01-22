@@ -3,16 +3,13 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 const NavBar = () => {
-  const pathName = usePathname();
-
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/projects" },
-    { label: "Contact", href: "/contact" },
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -22,12 +19,9 @@ const NavBar = () => {
       <nav>
         <ul className="space-x-8 font-medium">
           {navLinks.map((link) => {
-            const activePage = pathName === link.href;
             return (
               <Link
-                className={`${
-                  activePage && "text-primary-800"
-                } hover:text-primary-800`}
+                className="hover:text-primary-800 "
                 key={link.href}
                 href={link.href}
               >

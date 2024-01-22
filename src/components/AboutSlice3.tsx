@@ -12,7 +12,7 @@ const AboutSlice3 = () => {
           height={1000}
         />
       </div>
-      <div className="w-full">
+      <div className="w-full text-center md:text-left">
         <h2 className="text-2xl font-semibold">
           What I do for fun beyond coding <span className="font-light">〰</span>
         </h2>

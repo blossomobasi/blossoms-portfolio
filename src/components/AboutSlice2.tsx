@@ -4,7 +4,7 @@ import React from "react";
 const AboutSlice2 = () => {
   return (
     <section className="flex items-center md:gap-x-20 gap-y-10 md:my-28 my-16 flex-col-reverse md:flex-row">
-      <div className="w-full">
+      <div className="w-full text-center md:text-left">
         <h2 className="text-2xl font-semibold">Collaborations ♻</h2>
         <p className="text-sm mt-3 text-stone-700">
           In collaboration with talented teams, I&apos;ve contributed to the

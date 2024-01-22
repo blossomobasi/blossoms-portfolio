@@ -13,7 +13,7 @@ const AboutSlice1 = () => {
         />
       </div>
 
-      <div className="w-full">
+      <div className="w-full text-center md:text-left">
         <h2 className="text-2xl font-semibold">
           A dedicated Front-end Developer based in Lagos, Nigeria{" "}
           <span className="font-light">📍</span>
