@@ -11,8 +11,6 @@ const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
   const [isActive, setIsActive] = useState(0);
 
-  const onClose = () => setShowNav((show) => !show);
-
   const navLinks = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
@@ -23,7 +21,6 @@ const NavBar = () => {
   return (
     <header className="flex items-center justify-between h-14 md:px-10 px-5 border-b border-b-stone-50 sticky shadow-sm">
       <Logo />
-
       <nav className="sm:block hidden">
         <ul className="space-x-8 font-medium text-stone-600">
           {navLinks.map((link, i) => {
@@ -40,13 +37,12 @@ const NavBar = () => {
           })}
         </ul>
       </nav>
-
       {!showNav && (
         <span
           onClick={() => setShowNav(true)}
-          className="sm:hidden block hover:bg-slate-100 p-1.5 rounded-md cursor-pointer"
+          className="sm:hidden block hover:bg-slate-50 p-1.5 rounded-md cursor-pointer"
         >
-          <CgMenuRight size={27} />
+          <CgMenuRight size={25} />
         </span>
       )}
 
@@ -57,9 +53,12 @@ const NavBar = () => {
             {navLinks.map((link, i) => {
               return (
                 <Link
-                  onClick={() => setIsActive(i)}
-                  className={`hover:bg-slate-100 w-28 rounded-sm py-1 text-center ${
-                    isActive === i && "bg-slate-100 text-black"
+                  onClick={() => {
+                    setIsActive(i);
+                    setShowNav(false);
+                  }}
+                  className={`hover:bg-slate-50 w-28 rounded-sm py-1 text-center ${
+                    isActive === i && "bg-slate-50 text-black"
                   }`}
                   key={link.href}
                   href={link.href}
@@ -71,12 +70,20 @@ const NavBar = () => {
           </ul>
 
           <span
-            onClick={onClose}
-            className="bg-slate-100 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
+            onClick={() => setShowNav(false)}
+            className="bg-white p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
           >
             <LiaTimesSolid size={27} />
           </span>
         </nav>
+      )}
+
+      {/* Overlay */}
+      {showNav && (
+        <div
+          onClick={() => setShowNav(false)}
+          className="h-screen w-full absolute top-0 left-0 z-40 bg-black/20"
+        />
       )}
     </header>
   );
