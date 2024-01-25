@@ -21,7 +21,7 @@ const Projects = () => {
       type: "reverse",
     },
     {
-      href: "https://the-wild-oasis-dev-b.vercel.app/",
+      href: "https://tridehq-clone.vercel.app/",
       src: "/images/tridehq-clone.png",
       alt: "Tridehq clone Project",
       title: "Tridehq-clone",
