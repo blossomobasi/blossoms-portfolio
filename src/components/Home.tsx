@@ -8,7 +8,7 @@ import TechStack from "./TechStack";
 const Home = () => {
   return (
     <section id="home" className="p-2 md:mb-0 mb-20">
-      <div className="flex items-center md:pt-10 gap-x-10 flex-col-reverse lg:flex-row">
+      <div className="flex items-center md:pt-10 gap-x-10 gap-y-5 flex-col-reverse lg:flex-row">
         <div className="text-sm w-full text-center md:text-left">
           <div className="mb-5 text-lg font-medium italic">
             <Typewriter
@@ -34,14 +34,15 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="relative md:w-1/2 h-full -z-10">
+        <div className="relative md:w-[55%] h-full -z-10">
           <Image
-            src="/images/tech-guy.png"
+            // src="/images/tech-guy.png"
+            src="/images/blossom.jpg"
             alt="Tech guy"
             width={500}
             height={500}
             priority
-            className="md:h-full h-[23rem] w-full"
+            className="md:h-full h-[23rem] w-full rounded-full"
           />
         </div>
       </div>
