@@ -41,7 +41,7 @@ const Home = () => {
             width={500}
             height={500}
             priority
-            className="h-full w-full"
+            className="md:h-full h-[23rem] w-full"
           />
         </div>
       </div>
