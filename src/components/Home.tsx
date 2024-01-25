@@ -26,7 +26,7 @@ const Home = () => {
           <p className="mt-3 text-stone-700">
             Hi! I&apos;m{" "}
             <span className="font-semibold text-base text-black">
-              Obasi Blossom
+              Blossom Obasi
             </span>
             , a dedicated and passionate frontend developer based in Lagos,
             Nigeria with a focus on creating delightful and user-friendly web
