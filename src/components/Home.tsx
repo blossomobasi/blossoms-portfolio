@@ -28,8 +28,9 @@ const Home = () => {
             <span className="font-semibold text-base text-black">
               Obasi Blossom
             </span>
-            , a passionate frontend developer based in Lagos, Nigeria with a
-            focus on creating delightful and user-friendly web experiences.
+            , a dedicated and passionate frontend developer based in Lagos,
+            Nigeria with a focus on creating delightful and user-friendly web
+            experiences.
           </p>
         </div>
 
