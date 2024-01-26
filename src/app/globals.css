@@ -5,3 +5,8 @@
 * {
   scroll-behavior: smooth;
 }
+
+input:focus-within,
+textarea:focus-within {
+  outline: none;
+}

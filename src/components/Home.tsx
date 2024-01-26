@@ -4,6 +4,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 import Image from "next/image";
 import TechStack from "./TechStack";
+import Icon from "./Icon";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -20,7 +23,7 @@ const Home = () => {
               loop={true}
             />
           </div>
-          <h1 className="md:text-5xl text-3xl font-extrabold">
+          <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
             Front-End React Developer
           </h1>
           <p className="mt-3 text-stone-700">
@@ -32,13 +35,26 @@ const Home = () => {
             Nigeria with a focus on creating delightful and user-friendly web
             experiences.
           </p>
+          <div className="flex md:justify-start justify-center mt-5 gap-3">
+            <Icon url="https://github.com/Dev-kami" title="Github">
+              <FaGithub />
+            </Icon>
+            <Icon
+              url="https://www.linkedin.com/in/obasi-blossom-07063a25a/"
+              title="Linked in"
+            >
+              <FaLinkedinIn />
+            </Icon>
+            <Icon url="https://www.instagram.com/iambl0ss0m/" title="Instagram">
+              <BsInstagram />
+            </Icon>
+          </div>
         </div>
 
         <div className="relative md:w-[55%] h-full -z-10">
           <Image
-            // src="/images/tech-guy.png"
             src="/images/blossom.jpg"
-            alt="Tech guy"
+            alt="Blossom"
             width={500}
             height={500}
             priority

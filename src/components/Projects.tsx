@@ -17,16 +17,16 @@ const Projects = () => {
       alt: "The wild oasis Project",
       title: "The wild Oasis",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati enim, maiores quas id veniam tenetur amet saepe eum aut architecto quae distinctio modi, omnis sunt ad quasi alias? Ab! ",
+        "The Wild Oasis simplifies cabin rentals, making your getaway dreams a reality. Find your perfect retreat and book your wilderness escape effortlessly. Your adventure starts here.",
       type: "reverse",
     },
     {
       href: "https://tridehq-clone.vercel.app/",
       src: "/images/tridehq-clone.png",
       alt: "Tridehq clone Project",
-      title: "Tridehq-clone",
+      title: "Tridehq-clone - Banking made easy for churches and ministries",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati enim, maiores quas id veniam tenetur amet saepe eum aut architecto quae distinctio modi, omnis sunt ad quasi alias? Ab! ",
+        "Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
     },
   ];
   return (

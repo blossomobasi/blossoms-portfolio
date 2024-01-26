@@ -9,7 +9,7 @@ const montserrat_alternates = Montserrat_Alternates({
 });
 
 export const metadata: Metadata = {
-  title: "Blossom's portfolio",
+  title: "Obasi Blossom",
   description: "About Obasi Blossom",
 };
 

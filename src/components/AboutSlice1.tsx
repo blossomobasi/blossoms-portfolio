@@ -15,8 +15,7 @@ const AboutSlice1 = () => {
 
       <div className="w-full text-center md:text-left">
         <h2 className="text-2xl font-semibold">
-          A dedicated Front-end Developer based in Lagos, Nigeria{" "}
-          <span className="font-light">📍</span>
+          A dedicated Front-end Developer based in Lagos, Nigeria 📍
         </h2>
         <p className="mt-3 text-sm text-stone-700">
           Hello! I&apos;m a dedicated junior frontend developer currently
