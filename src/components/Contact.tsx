@@ -1,11 +1,43 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+
+import emailjs from "@emailjs/browser";
+
 import { BsPhone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { SlLocationPin } from "react-icons/sl";
-import Link from "next/link";
+
 import Icon from "./Icon";
 import Button from "./Button";
 
 const Contact = () => {
+  const form = React.useRef();
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log(form.current);
+
+    emailjs
+      .sendForm(
+        "service_vrs32ld",
+        "template_2uscurd",
+        form.current,
+        "NCT2JkJVp3pNSSDN5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="md:my-20 my-10">
       <div className="uppercase font-extrabold text-stone-600 relative w-fit mb-10 text-xl italic -z-10">
@@ -51,30 +83,33 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="w-full space-y-5">
+        <form ref={form} onSubmit={sendEmail} className="w-full space-y-5">
           <div className="flex gap-5">
             <input
               className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
               required
               type="text"
               placeholder="Name..."
+              name="user_name"
             />
             <input
               className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
               required
               type="email"
               placeholder="Email..."
+              name="user_email"
             />
           </div>
-          <input
+          {/* <input
             className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
             type="text"
             placeholder="Subject"
-          />
+          /> */}
           <textarea
             className="w-full h-28 border-2 border-stone-300 focus-within:border-stone-500 rounded-md px-3"
             required
             placeholder="Message"
+            name="message"
           />
           <Button type="submit">Send message</Button>
         </form>
