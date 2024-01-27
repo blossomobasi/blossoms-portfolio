@@ -32,7 +32,7 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-stone-600">Email:</h3>
               <Link
                 href="mailto:blossomobasi2@gmail.com"
-                className="text-stone-500 hover:text-stone-700"
+                className="text-purple-800"
               >
                 blossomobasi2@gmail.com
               </Link>
