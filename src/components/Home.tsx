@@ -24,7 +24,7 @@ const Home = () => {
             />
           </div>
           <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
-            Front-End React Developer
+            Front-End Developer
           </h1>
           <p className="mt-3 text-stone-700">
             Hi! I&apos;m{" "}

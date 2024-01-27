@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { SlLocationPin } from "react-icons/sl";
 import Link from "next/link";
 import Icon from "./Icon";
+import Button from "./Button";
 
 const Contact = () => {
   return (
@@ -75,12 +76,7 @@ const Contact = () => {
             required
             placeholder="Message"
           />
-          <button
-            className="bg-stone-500 hover:bg-stone-600 text-white h-9 px-4 rounded-md"
-            type="submit"
-          >
-            Send message
-          </button>
+          <Button type="submit">Send message</Button>
         </form>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 const Projects = () => {
   const projects = [
@@ -59,7 +60,8 @@ const Projects = () => {
             </Link>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
-              <p className="mt-3 text-sm text-stone-700">{project.content}</p>
+              <p className="my-5 text-sm text-stone-700">{project.content}</p>
+              <Button url={project.href}>View</Button>
             </div>
           </div>
         ))}
