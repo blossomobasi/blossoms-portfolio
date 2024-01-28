@@ -28,6 +28,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("Message successfully sent");
+          formRef.current?.reset();
         },
         (error) => {
           console.log(error.text);
