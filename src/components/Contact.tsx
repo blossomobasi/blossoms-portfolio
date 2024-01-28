@@ -18,8 +18,6 @@ const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(formRef);
-
     emailjs
       .sendForm(
         "service_vrs32ld",
@@ -28,9 +26,8 @@ const Contact = () => {
         "NCT2JkJVp3pNSSDN5"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Message sent");
+        () => {
+          console.log("Message successfully sent");
         },
         (error) => {
           console.log(error.text);
@@ -100,11 +97,11 @@ const Contact = () => {
               name="user_email"
             />
           </div>
-          {/* <input
+          <input
             className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
             type="text"
             placeholder="Subject"
-          /> */}
+          />
           <textarea
             className="w-full h-28 border-2 border-stone-300 focus-within:border-stone-500 rounded-md px-3"
             required
