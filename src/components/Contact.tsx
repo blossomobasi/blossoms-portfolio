@@ -13,18 +13,18 @@ import Icon from "./Icon";
 import Button from "./Button";
 
 const Contact = () => {
-  const form = React.useRef();
+  const formRef = React.useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(form.current);
+    console.log(formRef);
 
     emailjs
       .sendForm(
         "service_vrs32ld",
         "template_2uscurd",
-        form.current,
+        formRef.current as HTMLFormElement,
         "NCT2JkJVp3pNSSDN5"
       )
       .then(
@@ -83,7 +83,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} className="w-full space-y-5">
+        <form ref={formRef} onSubmit={sendEmail} className="w-full space-y-5">
           <div className="flex gap-5">
             <input
               className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
