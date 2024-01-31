@@ -9,6 +9,7 @@ const TechStack = () => {
     { src: "/images/react.png", alt: "React" },
     { src: "/images/react-query.jpeg", alt: "React Query" },
     { src: "/images/typescript.png", alt: "Typescript" },
+    { src: "/images/github.png", alt: "Github" },
     { src: "/images/supabase.jpeg", alt: "Supabase" },
   ];
   return (
