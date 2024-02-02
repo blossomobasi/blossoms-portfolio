@@ -1,17 +1,8 @@
+import { techStackData } from "@/data/techStack";
 import Image from "next/image";
 
 const TechStack = () => {
-  const techStack = [
-    { src: "/images/html.png", alt: "HTML" },
-    { src: "/images/css.png", alt: "CSS" },
-    { src: "/images/javascript.png", alt: "Javascript" },
-    { src: "/images/tailwindcss.png", alt: "Tailwindcss" },
-    { src: "/images/react.png", alt: "React" },
-    { src: "/images/react-query.jpeg", alt: "React Query" },
-    { src: "/images/typescript.png", alt: "Typescript" },
-    { src: "/images/github.png", alt: "Github" },
-    { src: "/images/supabase.jpeg", alt: "Supabase" },
-  ];
+  const techStack = techStackData;
   return (
     <div className="flex items-center mt-10 md:gap-8 gap-4 w-fit overflow-hidden overflow-x-auto">
       <span className="font-medium hidden sm:block">Tech Stack |</span>

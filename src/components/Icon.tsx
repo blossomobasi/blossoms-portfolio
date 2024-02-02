@@ -1,14 +1,16 @@
 import Link from "next/link";
 
+type IconProps = {
+  children: React.ReactNode;
+  title?: string;
+  url?: string;
+}
+
 const Icon = ({
   children,
   title,
   url,
-}: {
-  children: React.ReactNode;
-  title?: string;
-  url?: string;
-}) => {
+}: IconProps) => {
   const className = "bg-stone-200 p-3 rounded-full w-fit hover:bg-stone-300";
 
   if (url)
