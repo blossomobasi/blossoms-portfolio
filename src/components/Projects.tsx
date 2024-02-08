@@ -9,6 +9,7 @@ const Projects = () => {
       src: "/images/chow-project.png",
       alt: "Chow Project",
       title: "CHOW - where speed meets satisfaction",
+      development: true,
       content:
         "Chow is a website that empowers users to set the pace in delivering food, ensuring that every order reaches its destination with unparalleled speed and efficiency.",
     },
@@ -61,6 +62,15 @@ const Projects = () => {
             <div className="flex-1">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
               <p className="my-5 text-sm text-stone-700">{project.content}</p>
+
+              {/* Currently In Development */}
+              {project?.development && (
+                <small className="block mb-3 text-red-500">
+                  This project is currently in development &mdash; Though
+                  Landing page can be viewed
+                </small>
+              )}
+
               <Button url={project.href}>View</Button>
             </div>
           </div>

@@ -53,8 +53,8 @@ const Home = () => {
 
         <div className="relative md:w-[55%] h-full -z-10">
           <Image
-            // src="/images/blossom.jpg"
-            src="/images/fresh-guy.jpg"
+            src="/images/blossom.jpg"
+            // src="/images/fresh-guy.jpg"
             alt="Blossom"
             width={500}
             height={500}
