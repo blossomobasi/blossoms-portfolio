@@ -87,7 +87,7 @@ const Contact = () => {
               className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3"
               required
               type="text"
-              placeholder="Name..."
+              placeholder="Name / Company"
               name="user_name"
             />
             <input
