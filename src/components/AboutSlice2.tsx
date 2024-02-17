@@ -18,7 +18,7 @@ const AboutSlice2 = () => {
       <div className="w-full">
         <Image
           className="w-full h-full"
-          src="/images/new-collaboration.webp"
+          src="/undraw_work_time_re_hdyv.svg"
           alt="Team Collaboration"
           width={1000}
           height={1000}
