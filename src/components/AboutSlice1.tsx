@@ -5,7 +5,7 @@ const AboutSlice1 = () => {
     <div className="flex md:gap-x-20 gap-y-10 items-center flex-col md:flex-row">
       <div className="h-fit w-full rounded-2xl overflow-hidden">
         <Image
-          src="\undraw_programming_re_kg9v.svg"
+          src="/dedicated_programmer.svg"
           alt="Laptop"
           className="h-[20rem] w-[30rem]"
           width={1000}
