@@ -5,7 +5,7 @@ import Icon from "./Icon";
 
 const Footer = () => {
   return (
-    <footer className="border-t-2 border-t-stone-100 md:pt-10 pt-5 mb-5 flex flex-col items-center">
+    <footer className="border-t-2 border-t-stone-100 md:pt-10 pt-5 mb-5 flex flex-col sm:items-center">
       <h2 className="font-semibold text-xl text-stone-600">
         Obasi Chizitere Blossom
       </h2>

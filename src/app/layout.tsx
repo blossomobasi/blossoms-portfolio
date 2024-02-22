@@ -9,8 +9,8 @@ const montserrat_alternates = Montserrat_Alternates({
 });
 
 export const metadata: Metadata = {
-  title: "Obasi Blossom",
-  description: "About Obasi Blossom",
+  title: "Blossom Obasi",
+  description: "About Blossom Obasi",
 };
 
 export default function RootLayout({
