@@ -20,9 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat_alternates.className}>
+      <body
+        className={
+          montserrat_alternates.className + " flex flex-col items-center"
+        }
+      >
         <NavBar />
-        {children}
+        <div className="max-w-[100rem]">{children}</div>
       </body>
     </html>
   );

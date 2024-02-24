@@ -19,7 +19,7 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="flex items-center justify-between h-14 md:px-10 px-5 border-b border-b-stone-50 sticky shadow-sm">
+    <header className="flex w-full items-center justify-between h-14 md:px-10 px-5 border-b border-b-stone-50 sticky shadow-sm">
       <Logo />
       <nav className="sm:block hidden">
         <ul className="space-x-8 font-medium text-stone-600">
