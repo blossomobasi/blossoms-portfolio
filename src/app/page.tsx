@@ -3,6 +3,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
 import Projects from "@/components/Projects";
+import ScrollUpButton from "@/components/ScrollUpButton";
 
 function Page() {
   return (
@@ -12,6 +13,8 @@ function Page() {
       <Projects />
       <Contact />
       <Footer />
+
+      <ScrollUpButton />
     </main>
   );
 }
