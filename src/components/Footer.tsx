@@ -5,8 +5,8 @@ import Icon from "./Icon";
 
 const Footer = () => {
   return (
-    <footer className="border-t-2 border-t-stone-100 md:pt-10 pt-5 mb-5 flex flex-col sm:items-center">
-      <div className="flex gap-5 mt-5">
+    <footer className="border-t-2 border-t-stone-100 md:pt-10 pt-5 mb-5 flex flex-col items-center">
+      <div className="flex gap-5">
         <Icon url="https://www.instagram.com/iambl0ss0m/" title="Instagram">
           <BsInstagram />
         </Icon>
