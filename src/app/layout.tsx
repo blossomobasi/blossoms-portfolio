@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Montserrat_Alternates } from "next/font/google";
+// import { Montserrat_Alternates } from "next/font/google";
+import { Raleway } from "next/font/google";
+
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
-const montserrat_alternates = Montserrat_Alternates({
+// const montserrat_alternates = Montserrat_Alternates({
+// weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   subsets: ["latin"],
+// });
+const raleway = Raleway({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -20,11 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={
-          montserrat_alternates.className + " flex flex-col items-center"
-        }
-      >
+      <body className={raleway.className + " flex flex-col items-center"}>
         <NavBar />
         <div className="max-w-[100rem]">{children}</div>
       </body>
