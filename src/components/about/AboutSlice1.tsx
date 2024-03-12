@@ -18,10 +18,9 @@ const AboutSlice1 = () => {
           A dedicated Front-end Developer based in Lagos, Nigeria 📍
         </h2>
         <p className="mt-3 text-sm text-stone-700">
-          Hello! I&apos;m a dedicated frontend developer currently pursuing a
-          degree in Computer Science at Lagos State University, now in my third
-          year. My journey in the world of technology has been both thrilling
-          and rewarding.
+          I&apos;m currently pursuing a degree in Computer Science at Lagos
+          State University, now in my third year. My journey in the world of
+          technology has been both thrilling and rewarding.
         </p>
       </div>
     </div>
