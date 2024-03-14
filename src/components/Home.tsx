@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="border border-stone-400 rounded-full md:w-[55%] h-full -z-10">
+        <div className="border border-stone-300 rounded-full md:w-[55%] h-full -z-10">
           <Image
             src="/images/blossom.jpg"
             alt="Blossom"
