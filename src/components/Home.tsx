@@ -15,7 +15,7 @@ const Home = () => {
         <div className="text-sm w-full text-center md:text-left">
           <div className="mb-5 text-lg font-medium italic">
             <Typewriter
-              words={["Hey There👋🏻", "Lovely meeting you😊"]}
+              words={["Hey There, I'm Blossom 👋🏻", "Lovely meeting you😊"]}
               cursor={true}
               cursorStyle="_"
               typeSpeed={100}
