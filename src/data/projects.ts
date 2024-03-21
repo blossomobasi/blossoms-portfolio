@@ -2,11 +2,11 @@ export const projects = [
   {
     href: "https://chow-frontend-2m7o54od6-herdeybayor.vercel.app/",
     src: "/images/chow-project.png",
-    alt: "Chow Project",
-    title: "CHOW - where speed meets satisfaction",
+    alt: "Chowgoo Project",
+    title: "CHOWGOO - where speed meets satisfaction",
     development: true,
     content:
-      "Chow is a website that empowers users to set the pace in delivering food, ensuring that every order reaches its destination with unparalleled speed and efficiency.",
+      "Chowgoo is a website that empowers users to set the pace in delivering food, ensuring that every order reaches its destination with unparalleled speed and efficiency.",
   },
   {
     href: "https://the-wild-oasis-dev-b.vercel.app/",
