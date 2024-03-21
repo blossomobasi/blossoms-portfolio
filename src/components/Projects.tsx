@@ -25,7 +25,7 @@ const Projects = () => {
             <Link
               target="_blank"
               href={project.href}
-              className="flex-1 border border-stone-200 hover:border-stone-400 p-2"
+              className="flex-1 border border-stone-200 hover:border-stone-400 p-2 relative"
             >
               <Image
                 src={project.src}
@@ -33,6 +33,11 @@ const Projects = () => {
                 width={1000}
                 height={1000}
               />
+              {project.collaboration && (
+                <span className="absolute bottom-0 right-0 bg-purple-100 text-purple-500 border border-purple-500 rounded-tl-full px-1.5 pl-3 text-sm">
+                  Collaboration
+                </span>
+              )}
             </Link>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold">{project.title}</h2>

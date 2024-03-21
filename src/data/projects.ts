@@ -5,6 +5,7 @@ export const projects = [
     alt: "Chowgoo Project",
     title: "CHOWGOO - where speed meets satisfaction",
     development: true,
+    collaboration: true,
     content:
       "Chowgoo is a website that empowers users to set the pace in delivering food, ensuring that every order reaches its destination with unparalleled speed and efficiency.",
   },
