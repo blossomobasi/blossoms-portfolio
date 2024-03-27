@@ -1,7 +1,10 @@
+import { FaGithub } from "react-icons/fa6";
+
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { projects as projectApi } from "../data/projects";
+import Icon from "./Icon";
 
 const Projects = () => {
   const projects = projectApi;
@@ -51,7 +54,12 @@ const Projects = () => {
                 </small>
               )}
 
-              <Button url={project.href}>View</Button>
+              <div className="flex space-x-3">
+                <Button url={project.href}>View</Button>
+                <Icon title="Github" url={project.githubLink}>
+                  <FaGithub />
+                </Icon>
+              </div>
             </div>
           </div>
         ))}
