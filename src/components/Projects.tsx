@@ -28,7 +28,7 @@ const Projects = () => {
             <Link
               target="_blank"
               href={project.href}
-              className="flex-1 border border-stone-200 hover:border-stone-400 p-2 relative"
+              className="flex-1 -z-10 border border-stone-200 hover:border-stone-400 p-2 relative"
             >
               <Image
                 src={project.src}
