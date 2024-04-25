@@ -47,36 +47,38 @@ const NavBar = () => {
       )}
 
       {/* Mobile screen */}
-      {showNav && (
-        <nav className="bg-white top-0 left-0 absolute h-screen font-medium w-[65%] z-50 transition ease-in-out duration-300 sm:hidden">
-          <ul className="p-2  flex flex-col items-center gap-y-10 pt-20  text-stone-600">
-            {navLinks.map((link, i) => {
-              return (
-                <Link
-                  onClick={() => {
-                    setIsActive(i);
-                    setShowNav(false);
-                  }}
-                  className={`hover:bg-slate-50 w-28 rounded-sm py-1 text-center ${
-                    isActive === i && "bg-slate-50 text-black"
-                  }`}
-                  key={link.href}
-                  href={link.href}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </ul>
+      <nav
+        className={`bg-white top-0 ${
+          showNav ? "left-0" : "-left-[30rem]"
+        } absolute h-screen font-medium w-[65%] z-50 transition-all ease-in-out duration-500 sm:hidden`}
+      >
+        <ul className="p-2 flex flex-col items-center gap-y-10 pt-20 text-stone-600">
+          {navLinks.map((link, i) => {
+            return (
+              <Link
+                onClick={() => {
+                  setIsActive(i);
+                  setShowNav(false);
+                }}
+                className={`hover:bg-slate-50 w-28 rounded-sm py-1 text-center ${
+                  isActive === i && "bg-slate-50 text-black"
+                }`}
+                key={link.href}
+                href={link.href}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </ul>
 
-          <span
-            onClick={() => setShowNav(false)}
-            className="bg-white p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
-          >
-            <LiaTimesSolid size={27} />
-          </span>
-        </nav>
-      )}
+        <span
+          onClick={() => setShowNav(false)}
+          className="bg-white p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
+        >
+          <LiaTimesSolid size={27} />
+        </span>
+      </nav>
 
       {/* Overlay */}
       {showNav && (
