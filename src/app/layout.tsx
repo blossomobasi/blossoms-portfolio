@@ -5,10 +5,12 @@ import { Exo_2 } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
-// const montserrat_alternates = Montserrat_Alternates({
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-//   subsets: ["latin"],
-// });
+/*
+const montserrat_alternates = Montserrat_Alternates({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+*/
 
 const exo_2 = Exo_2({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -16,7 +18,7 @@ const exo_2 = Exo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Blossom Obasi",
+  title: "Blossom Obasi | Frontend Developer",
   description: "About Blossom Obasi",
 };
 
