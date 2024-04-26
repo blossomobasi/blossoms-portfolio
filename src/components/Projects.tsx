@@ -44,7 +44,9 @@ const Projects = () => {
             </Link>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
-              <p className="my-5 text-sm text-stone-700">{project.content}</p>
+              <p className="mt-5 mb-2 text-sm text-stone-700">
+                {project.content}
+              </p>
 
               {/* Currently In Development */}
               {project?.development && (
@@ -52,6 +54,12 @@ const Projects = () => {
                   This project is currently in development &mdash; Though
                   Landing page can be viewed
                 </small>
+              )}
+              {project?.credentials && (
+                <div className="mb-2 flex flex-col text-green-700">
+                  <small>Email: {project.credentials?.email}</small>
+                  <small>Password: {project.credentials?.password}</small>
+                </div>
               )}
 
               <div className="flex space-x-3">

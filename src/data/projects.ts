@@ -8,6 +8,7 @@ interface IProjects {
   content: string;
   type?: "reverse" | "default"; // Fix this later - laziness wan kill me
   githubLink: string;
+  credentials?: { email: string; password: string };
 }
 
 export const projects: IProjects[] = [
@@ -31,6 +32,10 @@ export const projects: IProjects[] = [
       "The Wild Oasis simplifies cabin rentals, making your getaway dreams a reality. Find your perfect retreat and book your wilderness escape effortlessly. Your adventure starts here.",
     type: "reverse",
     githubLink: "https://github.com/Dev-kami/the-wild-oasis",
+    credentials: {
+      email: "test@test.com",
+      password: "12345678",
+    },
   },
   {
     href: "https://tridehq-clone.vercel.app/",
