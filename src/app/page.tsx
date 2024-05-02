@@ -11,7 +11,7 @@ function Page() {
     <main>
       <NavBar />
 
-      <section className="lg:px-40 md:px-20 pt-10">
+      <section className="lg:px-40 md:px-20 px-5 pt-16">
         <Home />
         <About />
         <Projects />
