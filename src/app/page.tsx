@@ -2,17 +2,22 @@ import About from "@/components/about/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
+import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import ScrollUpButton from "@/components/ScrollUpButton";
 
 function Page() {
   return (
-    <main className="h-[calc(100vh-3.5rem)] lg:px-40 md:px-20 px-4 overflow-auto">
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+    <main>
+      <NavBar />
+
+      <section className="lg:px-40 md:px-20 pt-10">
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </section>
 
       <ScrollUpButton />
     </main>
