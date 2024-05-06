@@ -59,6 +59,16 @@ export const projects: IProjects[] = [
     githubLink: "https://github.com/Dev-kami/tridehq-clone",
   }),
   createProject({
+    href: "https://pluralcode-test-app.vercel.app/",
+    src: "/images/pluralcode-test-project.png",
+    alt: "Plural Code Test Project",
+    title: "Plural Code Test App",
+    content:
+      "This project was to test my skills in frontend development, including concepts like responsive design, API integration, and more.",
+    githubLink: "https://github.com/Dev-kami/pluralcode-test-app",
+    type: "reverse",
+  }),
+  createProject({
     href: "https://road-transit-delivery.vercel.app/",
     src: "/images/road-transit-delivery.png",
     alt: "Road Transit Delivery Project",
@@ -66,6 +76,5 @@ export const projects: IProjects[] = [
     content:
       "Road Transit Delivery is a delivery service that ensures your packages are delivered to your desired location with speed and reliability.",
     githubLink: "https://github.com/Dev-kami/road-transit-delivery",
-    type: "reverse",
   }),
 ];
