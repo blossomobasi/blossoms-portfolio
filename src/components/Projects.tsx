@@ -11,9 +11,9 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="uppercase font-extrabold text-stone-600 relative w-fit mb-10 text-xl italic -z-10">
+      <div className="uppercase font-extrabold text-stone-600 dark:text-stone-300 relative w-fit mb-10 text-xl italic -z-10">
         Projects
-        <div className="absolute h-0.5 w-full bg-stone-600" />
+        <div className="absolute h-0.5 w-full bg-stone-600 dark:bg-stone-300" />
       </div>
 
       <div className="space-y-10 md:space-y-10">
@@ -28,7 +28,7 @@ const Projects = () => {
             <Link
               target="_blank"
               href={project.href}
-              className="flex-1 -z-10 border border-stone-200 hover:border-stone-400 p-2 relative"
+              className="flex-1 -z-10 border border-stone-200 hover:border-stone-400 dark:border-stone-900 p-2 relative"
             >
               <Image
                 src={project.src}
@@ -37,14 +37,14 @@ const Projects = () => {
                 height={1000}
               />
               {project.collaboration && (
-                <span className="absolute bottom-0 right-0 bg-purple-100 text-purple-500 border border-purple-500 rounded-tl-full px-1.5 pl-3 text-sm">
+                <span className="absolute bottom-0 right-0 bg-purple-100 text-purple-500 border border-purple-500 dark:text-purple-700 dark:bg-purple-200 dark:border-purple-700 rounded-tl-full px-1.5 pl-3 text-sm">
                   Collaboration
                 </span>
               )}
             </Link>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold">{project.title}</h2>
-              <p className="mt-5 mb-2 text-sm text-stone-700">
+              <p className="mt-5 mb-2 text-sm text-stone-700 dark:text-stone-500">
                 {project.content}
               </p>
 
