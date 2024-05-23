@@ -31,8 +31,8 @@ const NavBar = () => {
             return (
               <Link
                 onClick={() => setIsActive(i)}
-                className={`hover:text-black dark:hover:text-slate-300 ${
-                  isActive === i && "text-black dark:text-slate-300"
+                className={`hover:text-black dark:hover:text-stone-300 ${
+                  isActive === i && "text-black dark:text-stone-300"
                 }`}
                 key={link.href}
                 href={link.href}
@@ -56,7 +56,7 @@ const NavBar = () => {
         </span>
       </nav>
 
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center space-x-5 sm:hidden">
         {/* Dark mode toggle */}
         {!showNav && (
           <span
@@ -73,6 +73,7 @@ const NavBar = () => {
           </span>
         )}
 
+        {/* Toggle menu */}
         {!showNav && (
           <span
             onClick={() => setShowNav(true)}
