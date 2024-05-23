@@ -20,8 +20,10 @@ const AboutSlice3 = () => {
           I find immense joy in problem-solving. While it may be challenging at
           times, the satisfaction of overcoming obstacles fuels my passion for
           programming.{" "}
-          <span className="font-semibold text-black">Beyond coding</span>, I
-          have a love for diverse interests. I enjoy immersing myself in the
+          <span className="font-semibold text-black dark:text-stone-300">
+            Beyond coding
+          </span>
+          , I have a love for diverse interests. I enjoy immersing myself in the
           world of gaming, particularly indulging in Call of Duty Mobile.
           Connecting with friends and family is another source of happiness for
           me. Oh, and I can&apos;t forget to mention my enthusiasm for anime
