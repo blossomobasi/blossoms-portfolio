@@ -98,7 +98,7 @@ const NavBar = () => {
                   setIsActive(i);
                   setShowNav(false);
                 }}
-                className={`hover:bg-slate-50 dark:hover:text-black dark:hover:bg-stone-300 w-28 rounded-sm py-1 dark:text-stone-300 text-center ${
+                className={`hover:bg-slate-50 dark:hover:text-black dark:hover:bg-stone-300 w-28 rounded-sm py-1 text-center ${
                   isActive === i &&
                   "bg-slate-50 dark:bg-stone-300 dark:text-black text-black"
                 }`}
