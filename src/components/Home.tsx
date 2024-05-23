@@ -3,12 +3,8 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
-import Icon from "./Icon";
 import TechStack from "./TechStack";
-
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
+import SocialIcons from "./SocialIcons";
 
 const Home = () => {
   return (
@@ -37,23 +33,9 @@ const Home = () => {
             Nigeria with a focus on creating delightful and user-friendly web
             experiences.
           </p>
-          <div className="flex md:justify-start justify-center mt-5 gap-3">
-            <Icon url="https://github.com/Dev-kami" title="Github">
-              <FaGithub />
-            </Icon>
-            <Icon
-              url="https://www.linkedin.com/in/obasi-blossom-07063a25a/"
-              title="Linked in"
-            >
-              <FaLinkedinIn />
-            </Icon>
-            <Icon url="https://www.instagram.com/iambl0ss0m/" title="Instagram">
-              <BsInstagram />
-            </Icon>
-            <Icon url="https://x.com/Blossom_obasi" title="Twitter(X)">
-              <FaXTwitter />
-            </Icon>
-          </div>
+          {/* Social media links */}
+
+          <SocialIcons />
         </div>
 
         <div className="border border-stone-300 dark:border-stone-700 rounded-full md:w-[55%] h-full -z-10">

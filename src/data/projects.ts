@@ -64,7 +64,7 @@ export const projects: IProjects[] = [
     alt: "Plural Code Test Project",
     title: "Plural Code Test App",
     content:
-      "This project was to test my skills in frontend development, including concepts like responsive design, API integration, and more.",
+      "This project was to test my skills in frontend development, including concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
     githubLink: "https://github.com/Dev-kami/pluralcode-test-app",
     type: "reverse",
   }),
