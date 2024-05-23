@@ -63,7 +63,7 @@ const Projects = () => {
               )}
 
               <div className="flex space-x-3">
-                <Button url={project.href}>View</Button>
+                <Button url={project.href}>Live</Button>
                 <Icon title="Github" url={project.githubLink}>
                   <FaGithub />
                 </Icon>
