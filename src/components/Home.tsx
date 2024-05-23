@@ -1,12 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
-import Image from "next/image";
-import TechStack from "./TechStack";
 import Icon from "./Icon";
+import TechStack from "./TechStack";
+
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -47,6 +49,9 @@ const Home = () => {
             </Icon>
             <Icon url="https://www.instagram.com/iambl0ss0m/" title="Instagram">
               <BsInstagram />
+            </Icon>
+            <Icon url="https://x.com/Blossom_obasi" title="Twitter(X)">
+              <FaXTwitter />
             </Icon>
           </div>
         </div>

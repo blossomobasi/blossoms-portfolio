@@ -1,9 +1,10 @@
 "use client";
 
-import { useDarkMode } from "@/context/DarkModeContext";
-import Logo from "./Logo";
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+import { useDarkMode } from "@/context/DarkModeContext";
+
+import Logo from "./Logo";
 
 import { CgMenuRight } from "react-icons/cg";
 import { LiaTimesSolid } from "react-icons/lia";
