@@ -26,7 +26,7 @@ const NavBar = () => {
     <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black/90 dark:border-b-stone-900">
       <Logo />
       <nav className="flex items-center space-x-10">
-        <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-400">
+        <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-500">
           {navLinks.map((link, i) => {
             return (
               <Link

@@ -30,7 +30,7 @@ export default function RootLayout({
     <DarkModeProvider>
       <html lang="en">
         <body
-          className={`${exo_2.className} max-w-[100rem] dark:bg-black dark:text-stone-300`}
+          className={`${exo_2.className} max-w-[100rem] dark:bg-black dark:text-stone-200`}
         >
           {children}
         </body>
