@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Exo_2 } from "next/font/google";
 import "./globals.css";
+import { DarkModeProvider } from "@/context/DarkModeContext";
 
 /* import { Montserrat_Alternates } from "next/font/google";
 
@@ -26,8 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${exo_2.className} max-w-[100rem]`}>{children}</body>
-    </html>
+    <DarkModeProvider>
+      <html lang="en">
+        <body
+          className={`${exo_2.className} max-w-[100rem] dark:bg-black dark:text-stone-300`}
+        >
+          {children}
+        </body>
+      </html>
+    </DarkModeProvider>
   );
 }

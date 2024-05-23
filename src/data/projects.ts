@@ -68,13 +68,13 @@ export const projects: IProjects[] = [
     githubLink: "https://github.com/Dev-kami/pluralcode-test-app",
     type: "reverse",
   }),
-  createProject({
-    href: "https://road-transit-delivery.vercel.app/",
-    src: "/images/road-transit-delivery.png",
-    alt: "Road Transit Delivery Project",
-    title: "Road Transit Delivery - Fast and reliable delivery service.",
-    content:
-      "Road Transit Delivery is a delivery service that ensures your packages are delivered to your desired location with speed and reliability.",
-    githubLink: "https://github.com/Dev-kami/road-transit-delivery",
-  }),
+  // createProject({
+  //   href: "https://road-transit-delivery.vercel.app/",
+  //   src: "/images/road-transit-delivery.png",
+  //   alt: "Road Transit Delivery Project",
+  //   title: "Road Transit Delivery - Fast and reliable delivery service.",
+  //   content:
+  //     "Road Transit Delivery is a delivery service that ensures your packages are delivered to your desired location with speed and reliability.",
+  //   githubLink: "https://github.com/Dev-kami/road-transit-delivery",
+  // }),
 ];

@@ -1,15 +1,19 @@
 "use client";
 
+import { useDarkMode } from "@/context/DarkModeContext";
 import Logo from "./Logo";
 import Link from "next/link";
 import { useState } from "react";
 
 import { CgMenuRight } from "react-icons/cg";
 import { LiaTimesSolid } from "react-icons/lia";
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
   const [isActive, setIsActive] = useState(0);
+  const { isDarkMode, setIsDarkMode } = useDarkMode();
 
   const navLinks = [
     { label: "Home", href: "#home" },
@@ -19,15 +23,17 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm">
+    <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black dark:border-b-stone-900">
       <Logo />
-      <nav className="sm:block hidden">
-        <ul className="space-x-8 font-medium text-stone-600">
+      <nav className="flex items-center space-x-10">
+        <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-400">
           {navLinks.map((link, i) => {
             return (
               <Link
                 onClick={() => setIsActive(i)}
-                className={`hover:text-black ${isActive === i && "text-black"}`}
+                className={`hover:text-black dark:hover:text-slate-300 ${
+                  isActive === i && "text-black dark:text-slate-300"
+                }`}
                 key={link.href}
                 href={link.href}
               >
@@ -36,19 +42,50 @@ const NavBar = () => {
             );
           })}
         </ul>
-      </nav>
-      {!showNav && (
+
+        {/* Dark mode toggle */}
         <span
-          onClick={() => setShowNav(true)}
-          className="sm:hidden block hover:bg-slate-50 p-1.5 rounded-md cursor-pointer"
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          className="cursor-pointer hidden sm:block"
         >
-          <CgMenuRight size={25} />
+          {isDarkMode ? (
+            <MdOutlineLightMode size={25} />
+          ) : (
+            <MdDarkMode size={25} />
+          )}
         </span>
-      )}
+      </nav>
+
+      <div className="flex items-center space-x-5">
+        {/* Dark mode toggle */}
+        {!showNav && (
+          <span
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className={`cursor-pointer sm:hidden p-1.5 rounded-md hover:bg-slate-50 ${
+              !isDarkMode && "hover:bg-slate-50"
+            } dark:hover:bg-slate-900`}
+          >
+            {isDarkMode ? (
+              <MdOutlineLightMode size={25} />
+            ) : (
+              <MdDarkMode size={25} />
+            )}
+          </span>
+        )}
+
+        {!showNav && (
+          <span
+            onClick={() => setShowNav(true)}
+            className="sm:hidden block hover:bg-slate-50 dark:hover:bg-slate-900 p-1.5 rounded-md cursor-pointer"
+          >
+            <CgMenuRight size={25} />
+          </span>
+        )}
+      </div>
 
       {/* Mobile screen */}
       <nav
-        className={`bg-white top-0 ${
+        className={`bg-white dark:bg-black border-r dark:border-r-stone-800 top-0 ${
           showNav ? "left-0" : "-left-[30rem]"
         } absolute h-screen font-medium w-[65%] z-50 transition-all ease-in-out duration-500 sm:hidden`}
       >
@@ -60,8 +97,9 @@ const NavBar = () => {
                   setIsActive(i);
                   setShowNav(false);
                 }}
-                className={`hover:bg-slate-50 w-28 rounded-sm py-1 text-center ${
-                  isActive === i && "bg-slate-50 text-black"
+                className={`hover:bg-slate-50 dark:hover:text-black dark:hover:bg-stone-300 w-28 rounded-sm py-1 dark:text-stone-300 text-center ${
+                  isActive === i &&
+                  "bg-slate-50 dark:bg-stone-300 dark:text-black text-black"
                 }`}
                 key={link.href}
                 href={link.href}
@@ -74,7 +112,7 @@ const NavBar = () => {
 
         <span
           onClick={() => setShowNav(false)}
-          className="bg-white p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
+          className="bg-white dark:bg-stone-300 dark:text-black p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
         >
           <LiaTimesSolid size={27} />
         </span>
