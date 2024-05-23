@@ -15,7 +15,6 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-scroll-up": "^1.4.0",
     "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
