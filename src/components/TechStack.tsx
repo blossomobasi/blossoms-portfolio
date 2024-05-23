@@ -5,7 +5,7 @@ const TechStack = () => {
   const techStack = techStackData;
 
   return (
-    <div className="flex items-center mt-10 md:gap-8 gap-4 w-fit overflow-hidden overflow-x-auto">
+    <div className="flex items-center justify-center mt-10 md:gap-8 gap-4 md:w-fit overflow-hidden overflow-x-auto">
       <span className="font-medium hidden sm:block">Tech Stack |</span>
       <span className="flex items-center gap-8">
         {techStack.map((stack) => (

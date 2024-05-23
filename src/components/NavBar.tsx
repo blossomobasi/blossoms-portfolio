@@ -23,7 +23,7 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black dark:border-b-stone-900">
+    <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black/90 dark:border-b-stone-900">
       <Logo />
       <nav className="flex items-center space-x-10">
         <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-400">
@@ -63,7 +63,7 @@ const NavBar = () => {
             onClick={() => setIsDarkMode(!isDarkMode)}
             className={`cursor-pointer sm:hidden p-1.5 rounded-md hover:bg-slate-50 ${
               !isDarkMode && "hover:bg-slate-50"
-            } dark:hover:bg-slate-900`}
+            } dark:hover:bg-stone-800`}
           >
             {isDarkMode ? (
               <MdOutlineLightMode size={25} />
@@ -77,7 +77,7 @@ const NavBar = () => {
         {!showNav && (
           <span
             onClick={() => setShowNav(true)}
-            className="sm:hidden block hover:bg-slate-50 dark:hover:bg-slate-900 p-1.5 rounded-md cursor-pointer"
+            className="sm:hidden block hover:bg-slate-50 dark:hover:bg-stone-800 p-1.5 rounded-md cursor-pointer"
           >
             <CgMenuRight size={25} />
           </span>

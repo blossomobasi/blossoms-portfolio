@@ -26,9 +26,9 @@ const Home = () => {
           <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
             Front-End Developer
           </h1>
-          <p className="mt-3 text-stone-700">
+          <p className="mt-3 text-stone-700 dark:text-stone-500">
             Hi! I&apos;m{" "}
-            <span className="font-semibold text-base text-black">
+            <span className="font-semibold text-base text-black dark:text-stone-400">
               Blossom Obasi
             </span>
             , a dedicated and passionate frontend developer based in Lagos,
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="border border-stone-300 rounded-full md:w-[55%] h-full -z-10">
+        <div className="border border-stone-300 dark:border-stone-700 rounded-full md:w-[55%] h-full -z-10">
           <Image
             src="/images/blossom.jpg"
             alt="Blossom"
