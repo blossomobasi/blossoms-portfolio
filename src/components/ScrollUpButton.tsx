@@ -19,18 +19,16 @@ const ScrollUpButton = () => {
   }, []);
 
   return (
-    <div>
-      <button
-        onClick={() => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }}
-        className={`fixed bottom-5 right-5 bg-stone-500 dark:bg-stone-800 z-50 text-white p-2 rounded-sm ${
-          scroll ? "block" : "hidden"
-        }`}
-      >
-        <BsArrowUp />
-      </button>
-    </div>
+    <button
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+      className={`fixed bottom-5 right-5 bg-stone-500 dark:bg-stone-900 dark:hover:bg-stone-950 z-50 text-white p-2 rounded-sm ${
+        scroll ? "block" : "hidden"
+      }`}
+    >
+      <BsArrowUp />
+    </button>
   );
 };
 

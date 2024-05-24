@@ -12,7 +12,7 @@ interface IButtonProps
 
 const Button = ({ children, url }: IButtonProps) => {
   const className =
-    "bg-stone-500 hover:bg-stone-600 dark:bg-stone-800 dark:hover:bg-stone-900 text-white h-9 px-4 rounded-md";
+    "bg-stone-500 hover:bg-stone-600 dark:bg-stone-900 dark:hover:bg-stone-950 text-white h-9 px-4 rounded-md";
 
   if (url)
     return (

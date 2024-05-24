@@ -8,7 +8,7 @@ type IconProps = {
 
 const Icon = ({ children, title, url }: IconProps) => {
   const className =
-    "bg-stone-200 dark:bg-stone-800 p-3 rounded-full w-fit hover:bg-stone-300 dark:hover:bg-stone-900";
+    "bg-stone-200 dark:bg-stone-900 p-3 rounded-full w-fit hover:bg-stone-300 dark:hover:bg-stone-950";
 
   if (url)
     return (
