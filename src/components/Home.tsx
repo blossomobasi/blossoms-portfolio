@@ -45,7 +45,7 @@ const Home = () => {
             width={500}
             height={500}
             priority
-            className="md:h-full h-[23rem] w-full rounded-full contrast-125"
+            className="md:h-full sm:h-[23rem] w-full rounded-full contrast-125 aspect-square md:aspect-auto object-cover"
           />
         </div>
       </div>
