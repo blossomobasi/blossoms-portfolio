@@ -38,14 +38,14 @@ const Home = () => {
           <SocialIcons />
         </div>
 
-        <div className="border border-stone-300 dark:border-stone-700 rounded-full md:w-[55%] h-full -z-10">
+        <div className="border-[1rem] border-stone-300 dark:border-stone-700 rounded-full md:w-[55%] h-full -z-10">
           <Image
             src="/images/blossom.jpg"
             alt="Blossom"
             width={500}
             height={500}
             priority
-            className="md:h-full sm:h-[23rem] w-full rounded-full contrast-125 aspect-square md:aspect-auto object-cover"
+            className="md:h-full sm:h-[23rem] w-full rounded-full contrast-125 aspect-square md:aspect-auto object-cover scale-95"
           />
         </div>
       </div>
