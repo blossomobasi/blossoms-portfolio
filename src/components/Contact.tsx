@@ -11,54 +11,54 @@ import Icon from "./Icon";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  return (
-    <section id="contact" className="md:my-20 my-10">
-      <div className="uppercase font-extrabold text-stone-600 dark:text-stone-300 relative w-fit mb-10 text-xl italic -z-10">
-        Contact Me
-        <div className="absolute h-0.5 w-full bg-stone-600 dark:bg-stone-300" />
-      </div>
+    return (
+        <section id="contact" className="md:my-20 my-10">
+            <div className="uppercase font-extrabold text-stone-600 dark:text-stone-300 relative w-fit mb-10 text-xl italic -z-10">
+                Contact Me
+                <div className="absolute h-0.5 w-full bg-stone-600 dark:bg-stone-300" />
+            </div>
 
-      <div className="flex md:flex-row flex-col md:gap-20 gap-10">
-        <div className="space-y-10 text-stone-600 dark:text-stone-300">
-          <div className="flex items-center gap-5">
-            <Icon>
-              <BsPhone size={20} />
-            </Icon>
-            <div>
-              <h3 className="text-xl font-semibold">Call:</h3>
-              <code className="text-stone-500">+2349039477184</code>
-            </div>
-          </div>
-          <div className="flex items-center gap-5">
-            <Icon>
-              <AiOutlineMail size={20} />
-            </Icon>
-            <div>
-              <h3 className="text-xl font-semibold">Email:</h3>
-              <Link
-                href="mailto:blossomobasi2@gmail.com"
-                className="text-purple-600 font-medium"
-              >
-                blossomobasi2@gmail.com
-              </Link>
-            </div>
-          </div>
-          <div className="flex items-center gap-5">
-            <Icon>
-              <SlLocationPin size={20} />
-            </Icon>
-            <div>
-              <h3 className="text-xl font-semibold">Location:</h3>
-              <span className="text-stone-500">Ojota, Lagos Nigeria</span>
-            </div>
-          </div>
-        </div>
+            <div className="flex md:flex-row flex-col md:gap-20 gap-10">
+                <div className="space-y-10 text-stone-600 dark:text-stone-300">
+                    <div className="flex items-center gap-5">
+                        <Icon>
+                            <BsPhone size={20} />
+                        </Icon>
+                        <div>
+                            <h3 className="text-xl font-semibold">Call:</h3>
+                            <code className="text-stone-500">+2349039477184</code>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <Icon>
+                            <AiOutlineMail size={20} />
+                        </Icon>
+                        <div>
+                            <h3 className="text-xl font-semibold">Email:</h3>
+                            <Link
+                                href="mailto:blossomobasi2@gmail.com"
+                                className="text-purple-600 font-medium"
+                            >
+                                blossomobasi2@gmail.com
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <Icon>
+                            <SlLocationPin size={20} />
+                        </Icon>
+                        <div>
+                            <h3 className="text-xl font-semibold">Location:</h3>
+                            <span className="text-stone-500">Ojota, Lagos Nigeria</span>
+                        </div>
+                    </div>
+                </div>
 
-        {/* Contact Form */}
-        <ContactForm />
-      </div>
-    </section>
-  );
+                {/* Contact Form */}
+                <ContactForm />
+            </div>
+        </section>
+    );
 };
 
 export default Contact;

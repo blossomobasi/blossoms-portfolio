@@ -7,21 +7,21 @@ import Projects from "@/components/Projects";
 import ScrollUpButton from "@/components/ScrollUpButton";
 
 function Page() {
-  return (
-    <main>
-      <NavBar />
+    return (
+        <main>
+            <NavBar />
 
-      <section className="lg:px-40 md:px-20 px-5 pt-16">
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
-      </section>
+            <section className="lg:px-40 md:px-20 px-5 pt-16">
+                <Home />
+                <About />
+                <Projects />
+                <Contact />
+                <Footer />
+            </section>
 
-      <ScrollUpButton />
-    </main>
-  );
+            <ScrollUpButton />
+        </main>
+    );
 }
 
 export default Page;
