@@ -1,10 +1,11 @@
-import { FaGithub } from "react-icons/fa6";
-
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./Button";
 import { projects as projectApi } from "../data/projects";
+
+import { FaGithub } from "react-icons/fa6";
+
 import Icon from "./Icon";
+import Button from "./Button";
 
 const Projects = () => {
     const projects = projectApi;
