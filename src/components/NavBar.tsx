@@ -24,7 +24,7 @@ const NavBar = () => {
     ];
 
     return (
-        <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black/90 dark:border-b-stone-900">
+        <header className="flex w-full items-center justify-between bg-white/95 h-14 md:px-10 px-5 border-b border-b-stone-50 fixed shadow-sm dark:bg-black/90 dark:border-b-stone-900 max-w-[100rem]">
             <Logo />
             <nav className="flex items-center space-x-10">
                 <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-500">
