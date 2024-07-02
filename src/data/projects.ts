@@ -36,13 +36,22 @@ export const projects: IProjects[] = [
         githubLink: "https://github.com/blossomobasi/chow-frontend",
     }),
     createProject({
+        href: "https://pluralcode-test-app.vercel.app/",
+        src: "/images/pluralcode-test-project.png",
+        alt: "Plural Code Test Project",
+        title: "Plural Code Test App",
+        content:
+            "This project was to test my skills in frontend development, including concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
+        githubLink: "https://github.com/blossomobasi/pluralcode-test-app",
+        type: "reverse",
+    }),
+    createProject({
         href: "https://the-wild-oasis-dev-b.vercel.app/",
         src: "/images/the-wild-oasis.png",
         alt: "The wild oasis Project",
         title: "The wild Oasis",
         content:
             "The Wild Oasis simplifies cabin rentals, making your getaway dreams a reality. Find your perfect retreat and book your wilderness escape effortlessly. Your adventure starts here.",
-        type: "reverse",
         githubLink: "https://github.com/blossomobasi/the-wild-oasis",
         credentials: {
             email: "test@test.com",
@@ -54,27 +63,18 @@ export const projects: IProjects[] = [
         src: "/images/tridehq-clone.png",
         alt: "Tridehq clone Project",
         title: "Tridehq-clone - Banking made easy for churches and ministries",
+        type: "reverse",
         content:
             "Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
         githubLink: "https://github.com/blossomobasi/tridehq-clone",
     }),
     createProject({
-        href: "https://pluralcode-test-app.vercel.app/",
-        src: "/images/pluralcode-test-project.png",
-        alt: "Plural Code Test Project",
-        title: "Plural Code Test App",
+        href: "https://todo-frontend-woad.vercel.app/",
+        src: "/images/todo-project.png",
+        alt: "Todo Project",
+        title: "Todo App",
         content:
-            "This project was to test my skills in frontend development, including concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
-        githubLink: "https://github.com/blossomobasi/pluralcode-test-app",
-        type: "reverse",
+            "A simple todo app that allows users to create, update, delete, and filter todos based on their status. It also has a user authentication system.",
+        githubLink: "https://github.com/blossomobasi/todo-frontend",
     }),
-    // createProject({
-    //   href: "https://road-transit-delivery.vercel.app/",
-    //   src: "/images/road-transit-delivery.png",
-    //   alt: "Road Transit Delivery Project",
-    //   title: "Road Transit Delivery - Fast and reliable delivery service.",
-    //   content:
-    //     "Road Transit Delivery is a delivery service that ensures your packages are delivered to your desired location with speed and reliability.",
-    //   githubLink: "https://github.com/blossomobasi/road-transit-delivery",
-    // }),
 ];
