@@ -22,7 +22,7 @@ const defaultProps: Partial<IProjects> = {
 function createProject(props: IProjects): IProjects {
     return { ...defaultProps, ...props } as IProjects;
 }
-//
+
 export const projects: IProjects[] = [
     createProject({
         href: "https://chow-dev.vercel.app/",
