@@ -7,11 +7,9 @@ const AboutSlice2 = () => {
             <div className="w-full text-center md:text-left">
                 <h2 className="text-2xl font-semibold">Collaborations ♻</h2>
                 <p className="text-sm mt-3 text-stone-700 dark:text-stone-500">
-                    In collaboration with talented teams, I&apos;ve contributed to the creation of
-                    visually striking websites for businesses and other exciting projects. I pride
-                    myself on being a gritty individual; when I set my mind on a task, I navigate
-                    through it with determination, often pushing boundaries without taking much
-                    rest.
+                    I have worked with talented teams to create visually stunning websites for
+                    businesses and other exciting projects. I am a determined individual who prides
+                    myself on my tenacity when it comes to completing tasks.
                 </p>
             </div>
 
