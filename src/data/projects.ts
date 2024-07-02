@@ -74,7 +74,7 @@ export const projects: IProjects[] = [
         alt: "Todo Project",
         title: "Todo App",
         content:
-            "A simple todo app that allows users to create, update, delete, and filter todos based on their status. It also has a user authentication system.",
+            "A simple todo app that allows users to create, update and delete tasks. It also allows users to mark tasks as completed, set reminder and so on. It has an authentication system that allows users to sign up and login.",
         githubLink: "https://github.com/blossomobasi/todo-frontend",
     }),
 ];
