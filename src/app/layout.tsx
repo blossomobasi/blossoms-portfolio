@@ -16,7 +16,7 @@ const montserrat_alternates = Montserrat_Alternates({
 // });
 
 export const metadata: Metadata = {
-    title: "Blossom Obasi | Frontend Developer",
+    title: "Blossom Obasi | Full-stack Developer",
     description: "About Blossom Obasi",
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <DarkModeProvider>
             <html lang="en">
                 <body
-                    className={`${montserrat_alternates.className} max-w-[100rem] dark:bg-[#0d0d0d] dark:text-stone-200`}
+                    className={`${montserrat_alternates.className} max-w-[100rem] dark:bg-[#0d0d0d] dark:text-stone-200 selection:bg-stone-500  selection:text-white `}
                 >
                     {children}
                 </body>
