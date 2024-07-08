@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 * {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 input:focus-within,
 textarea:focus-within {
-  outline: none;
+    outline: none;
 }
