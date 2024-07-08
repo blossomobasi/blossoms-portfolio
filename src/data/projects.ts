@@ -25,7 +25,7 @@ function createProject(props: IProjects): IProjects {
 
 export const projects: IProjects[] = [
     createProject({
-        href: "https://chow-dev.vercel.app/",
+        href: "https://www.chowgoo.com/",
         src: "/images/chow-project.png",
         alt: "Chowgoo Project",
         title: "CHOWGOO - where speed meets satisfaction",
