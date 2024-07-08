@@ -30,14 +30,14 @@ const ContactForm = () => {
         <form ref={formRef} onSubmit={sendEmail} className="w-full space-y-5">
             <div className="flex gap-5">
                 <input
-                    className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-stone-950"
+                    className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-transparent"
                     required
                     type="text"
                     placeholder="Name / Company"
                     name="user_name"
                 />
                 <input
-                    className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-stone-950"
+                    className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-transparent"
                     required
                     type="email"
                     placeholder="Email..."
@@ -45,12 +45,12 @@ const ContactForm = () => {
                 />
             </div>
             <input
-                className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-stone-950"
+                className="w-full border-2 border-stone-300 focus-within:border-stone-500 rounded-md h-10 px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-transparent"
                 type="text"
                 placeholder="Subject"
             />
             <textarea
-                className="w-full h-28 border-2 border-stone-300 focus-within:border-stone-500 rounded-md px-3 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-stone-950"
+                className="w-full h-28 border-2 border-stone-300 focus-within:border-stone-500 rounded-md px-3 py-1 dark:border-stone-800 dark:focus-within:border-stone-400 dark:bg-transparent"
                 required
                 placeholder="Message"
                 name="message"
