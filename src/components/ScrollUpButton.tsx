@@ -1,9 +1,9 @@
 "use client";
 
+import React from "react";
+
 import { BsArrowUp } from "react-icons/bs";
 import { useState, useEffect, use } from "react";
-
-import React from "react";
 
 const ScrollUpButton = () => {
     const [scroll, setScroll] = useState(false);
