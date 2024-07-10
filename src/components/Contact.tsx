@@ -9,14 +9,12 @@ import { SlLocationPin } from "react-icons/sl";
 
 import Icon from "./Icon";
 import ContactForm from "./ContactForm";
+import TextHeader from "./TextHeader";
 
 const Contact = () => {
     return (
         <section id="contact" className="md:my-20 my-10">
-            <div className="uppercase font-extrabold text-stone-600 dark:text-stone-300 relative w-fit mb-10 text-xl italic -z-10">
-                Contact Me
-                <div className="absolute h-0.5 w-full bg-stone-600 dark:bg-stone-300" />
-            </div>
+            <TextHeader>Contact Me</TextHeader>
 
             <div className="flex md:flex-row flex-col md:gap-20 gap-10">
                 <div className="space-y-10 text-stone-600 dark:text-stone-300">
