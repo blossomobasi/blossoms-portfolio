@@ -22,7 +22,6 @@ const Home = () => {
                         />
                     </div>
                     <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
-                        {/* Front-End Developer */}
                         Full-stack Developer
                     </h1>
                     <p className="mt-3 text-stone-700 dark:text-stone-500">
@@ -30,8 +29,8 @@ const Home = () => {
                         <span className="font-semibold text-base text-black dark:text-stone-300">
                             Blossom Obasi
                         </span>
-                        , a dedicated and passionate developer based in Lagos, Nigeria with a focus
-                        on creating delightful and user-friendly web experiences.
+                        , I specialize in building dynamic, flexible, and highly functional web
+                        applications designed for a seamless user experience.
                     </p>
 
                     {/* Social media links */}
