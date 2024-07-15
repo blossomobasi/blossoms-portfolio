@@ -6,7 +6,6 @@ interface IProjects {
     development?: boolean;
     collaboration?: boolean;
     content: string;
-    type?: "reverse" | "default";
     githubLink: string;
     credentials?: { email: string; password: string };
 }
@@ -15,7 +14,6 @@ interface IProjects {
 const defaultProps: Partial<IProjects> = {
     development: false,
     collaboration: false,
-    type: "default",
 };
 
 // Function to merge actual props with default props
@@ -26,7 +24,7 @@ function createProject(props: IProjects): IProjects {
 export const projects: IProjects[] = [
     createProject({
         href: "https://www.chowgoo.com/",
-        src: "/images/chow-project.png",
+        src: "/images/chowgoo.png",
         alt: "Chowgoo Project",
         title: "CHOWGOO - where speed meets satisfaction",
         development: true,
@@ -36,6 +34,15 @@ export const projects: IProjects[] = [
         githubLink: "https://github.com/blossomobasi/chow-frontend",
     }),
     createProject({
+        href: "https://sesto-elemento.vercel.app/",
+        src: "/images/sesto_elemento.png",
+        alt: "Sesto Elemento Project",
+        title: "Sesto Elemento - Empowering Success in projects and Operation",
+        content:
+            "Indigenous oil and gas project and operational support servicing company, purposed to provide best-in-class services in markets across Africa and other regions.",
+        githubLink: "https://github.com/blossomobasi/sesto-elemento",
+    }),
+    createProject({
         href: "https://pluralcode-test-app.vercel.app/",
         src: "/images/pluralcode-test-project.png",
         alt: "Plural Code Test Project",
@@ -43,7 +50,6 @@ export const projects: IProjects[] = [
         content:
             "This project was to test my skills in frontend development, including concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
         githubLink: "https://github.com/blossomobasi/pluralcode-test-app",
-        type: "reverse",
     }),
     createProject({
         href: "https://the-wild-oasis-dev-b.vercel.app/",
@@ -63,7 +69,6 @@ export const projects: IProjects[] = [
         src: "/images/tridehq-clone.png",
         alt: "Tridehq clone Project",
         title: "Tridehq-clone - Banking made easy for churches and ministries",
-        type: "reverse",
         content:
             "Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
         githubLink: "https://github.com/blossomobasi/tridehq-clone",
