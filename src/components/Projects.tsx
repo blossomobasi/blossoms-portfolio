@@ -16,11 +16,11 @@ const Projects = () => {
             <TextHeader>Projects</TextHeader>
 
             <div className="space-y-10 md:space-y-10">
-                {projects.map((project) => (
+                {projects.map((project, i) => (
                     <div
                         key={project.alt}
                         className={`${
-                            project?.type === "reverse" && "flex-row-reverse md:flex-row-reverse"
+                            i % 2 === 0 && "flex-row-reverse md:flex-row-reverse"
                         } flex items-center flex-col md:flex-row gap-x-10 gap-y-5 p-3 rounded-sm h-full`}
                     >
                         <Link
