@@ -13,7 +13,7 @@ import TextHeader from "./TextHeader";
 
 const Contact = () => {
     return (
-        <section id="contact" className="md:my-20 my-10">
+        <section id="contact" className="md:my-20 my-10 max-w-[100rem] mx-auto">
             <TextHeader>Contact Me</TextHeader>
 
             <div className="flex md:flex-row flex-col md:gap-20 gap-10">
