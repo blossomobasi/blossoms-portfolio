@@ -12,7 +12,7 @@ const Projects = () => {
     const projects = projectApi;
 
     return (
-        <section id="projects">
+        <section id="projects" className="max-w-[100rem] mx-auto">
             <TextHeader>Projects</TextHeader>
 
             <div className="space-y-10 md:space-y-10">
