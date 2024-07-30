@@ -5,7 +5,7 @@ import TextHeader from "../TextHeader";
 
 const About = () => {
     return (
-        <section className="md:pt-28" id="about">
+        <section className="md:pt-28 max-w-[100rem] mx-auto" id="about">
             <TextHeader>About Me</TextHeader>
 
             <AboutSlice1 />
