@@ -8,7 +8,7 @@ import ScrollUpButton from "@/components/ScrollUpButton";
 
 function Page() {
     return (
-        <main className="w-full lg:max-w-[100rem]">
+        <main className="w-full">
             <NavBar />
 
             <section className="lg:px-40 md:px-20 px-5 pt-16">
