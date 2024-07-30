@@ -8,7 +8,7 @@ import SocialIcons from "./SocialIcons";
 
 const Home = () => {
     return (
-        <section id="home" className="p-2 md:mb-0 mb-20">
+        <section id="home" className="p-2 md:mb-0 mb-20 max-w-[100rem] mx-auto">
             <div className="flex items-center md:pt-10 gap-x-10 gap-y-5 flex-col-reverse lg:flex-row">
                 <div className="text-sm w-full text-center md:text-left">
                     <div className="mb-5 text-lg font-medium italic">
