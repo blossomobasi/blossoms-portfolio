@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { useDarkMode } from "@/context/DarkModeContext";
 
 import Logo from "./Logo";
@@ -12,15 +13,16 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
 
 const NavBar = () => {
+    const pathname = usePathname();
+    const [isActive, setIsActive] = useState("/");
     const [showNav, setShowNav] = useState(false);
-    const [isActive, setIsActive] = useState(0);
     const { isDarkMode, setIsDarkMode } = useDarkMode();
 
     const navLinks = [
-        { label: "Home", href: "#home" },
-        { label: "About", href: "#about" },
-        { label: "Projects", href: "#projects" },
-        { label: "Contact", href: "#contact" },
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about" },
+        { label: "Projects", href: "/projects" },
+        { label: "Contact", href: "/contact" },
     ];
 
     return (
@@ -29,12 +31,14 @@ const NavBar = () => {
                 <Logo />
                 <nav className="flex items-center space-x-10">
                     <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-500">
-                        {navLinks.map((link, i) => {
+                        {navLinks.map((link) => {
                             return (
                                 <Link
-                                    onClick={() => setIsActive(i)}
+                                    onClick={() => {
+                                        setIsActive(link.href);
+                                    }}
                                     className={`hover:text-black dark:hover:text-stone-300 ${
-                                        isActive === i && "text-black dark:text-stone-300"
+                                        pathname === link.href && "dark:text-stone-300 text-black"
                                     }`}
                                     key={link.href}
                                     href={link.href}
@@ -89,15 +93,15 @@ const NavBar = () => {
                     } absolute h-screen font-medium w-[65%] z-50 transition-all ease-in-out duration-500 sm:hidden`}
                 >
                     <ul className="p-2 flex flex-col items-center gap-y-10 pt-20 text-stone-600">
-                        {navLinks.map((link, i) => {
+                        {navLinks.map((link) => {
                             return (
                                 <Link
                                     onClick={() => {
-                                        setIsActive(i);
+                                        setIsActive(link.href);
                                         setShowNav(false);
                                     }}
                                     className={`hover:bg-slate-50 dark:hover:text-black dark:hover:bg-stone-300 w-28 rounded-sm py-1 text-center ${
-                                        isActive === i &&
+                                        isActive === link.href &&
                                         "bg-slate-50 dark:bg-stone-300 dark:text-black text-black"
                                     }`}
                                     key={link.href}
