@@ -24,7 +24,7 @@ const PrevButton = () => {
     return (
         <Link
             href={prevPathname === "Home" ? "/" : prevPathname.toLocaleLowerCase()}
-            className={`fixed top-[calc(100%-8rem)] left-10 group border dark:border-stone-800 border-stone-400 hover:border-stone-500 py-1 px-4 rounded-md ${
+            className={`fixed top-[calc(100%-8rem)] md:left-10 left-5 dark:bg-[#0a0a0a] bg-white group border dark:border-stone-800 border-stone-400 hover:border-stone-500 py-1 px-4 rounded-md ${
                 pathname === "/" && "hidden"
             }`}
         >
