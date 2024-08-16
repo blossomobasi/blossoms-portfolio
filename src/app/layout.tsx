@@ -4,6 +4,11 @@ import "./globals.css";
 import { DarkModeProvider } from "@/context/DarkModeContext";
 
 import { Montserrat_Alternates } from "next/font/google";
+import NavBar from "@/components/NavBar";
+import ScrollUpButton from "@/components/ScrollUpButton";
+import Footer from "@/components/Footer";
+import NextButton from "@/components/NextButton";
+import PrevButton from "@/components/PrevButton";
 
 const montserrat_alternates = Montserrat_Alternates({
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -31,7 +36,13 @@ export default function RootLayout({
                 <body
                     className={`${montserrat_alternates.className} dark:bg-[#0a0a0a] dark:text-stone-200 selection:bg-stone-500 selection:text-white`}
                 >
-                    {children}
+                    <NavBar />
+                    <section className="lg:px-40 md:px-20 px-5 pt-16">{children}</section>
+                    <Footer />
+
+                    <ScrollUpButton />
+                    <PrevButton />
+                    <NextButton />
                 </body>
             </html>
         </DarkModeProvider>
