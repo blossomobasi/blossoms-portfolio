@@ -24,7 +24,7 @@ const NextButton = () => {
     return (
         <Link
             href={nextPathname.toLocaleLowerCase()}
-            className={`fixed top-[calc(100%-8rem)] right-10 group border dark:border-stone-800 border-stone-400 hover:border-stone-500 py-1 px-2 rounded-md ${
+            className={`fixed top-[calc(100%-8rem)] md:right-10 right-5 dark:bg-[#0a0a0a] bg-white group border dark:border-stone-800 border-stone-400 hover:border-stone-500 py-1 px-2 rounded-md ${
                 pathname === "/contact" && "hidden"
             }`}
         >
