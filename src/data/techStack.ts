@@ -1,11 +1,16 @@
-export const techStackData = [
-    { src: "/images/html.png", alt: "HTML" },
-    { src: "/images/css.png", alt: "CSS" },
-    { src: "/images/javascript.png", alt: "Javascript" },
-    { src: "/images/tailwindcss.png", alt: "Tailwindcss" },
-    { src: "/images/react.png", alt: "React" },
-    { src: "/images/react-query.jpeg", alt: "React Query" },
-    { src: "/images/typescript.png", alt: "Typescript" },
-    { src: "/images/github.png", alt: "Github" },
-    // { src: "/images/supabase.jpeg", alt: "Supabase" },
+export const frontendStacks = [
+    { src: "/images/html5.svg", alt: "HTML" },
+    { src: "/images/css.svg", alt: "CSS" },
+    { src: "/images/javascript.svg", alt: "Javascript" },
+    { src: "/images/tailwindcss.svg", alt: "Tailwindcss" },
+    { src: "/images/react.svg", alt: "React" },
+    { src: "/images/nextjs.svg", alt: "Nextjs", change: true },
+    { src: "/images/typescript.svg", alt: "Typescript" },
+];
+
+export const backendStacks = [
+    { src: "/images/mongodb.svg", alt: "Mongodb" },
+    { src: "/images/nodejs.svg", alt: "Nodejs" },
+    { src: "/images/supabase.png", alt: "Supabase" },
+    { src: "/images/express.svg", alt: "Express js", change: true },
 ];
