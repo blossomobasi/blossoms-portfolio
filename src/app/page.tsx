@@ -28,8 +28,9 @@ const HomePage = () => {
                         <span className="font-semibold text-base text-black dark:text-stone-300">
                             Blossom Obasi
                         </span>
-                        , I specialize in building dynamic, flexible, and highly functional web
-                        applications designed for a seamless user experience.
+                        , a self-taught developer with over a year of experience, I specialize in
+                        building dynamic, flexible, and highly functional web applications designed
+                        for a seamless user experience.
                     </p>
 
                     {/* Social media links */}
