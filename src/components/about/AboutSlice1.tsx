@@ -19,8 +19,8 @@ const AboutSlice1 = () => {
                 </h2>
                 <p className="mt-3 text-sm text-stone-700 dark:text-stone-500">
                     I&apos;m currently pursuing a degree in Computer Science at Lagos State
-                    University, now in my third year. My journey in the world of technology has been
-                    both thrilling and rewarding.
+                    University, now in my final year. My journey in the world of technology has been
+                    both exciting and challenging.
                 </p>
             </div>
         </div>
