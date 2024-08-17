@@ -19,7 +19,7 @@ const ProjectsPage = () => {
                     <div
                         key={project.alt}
                         className={`${
-                            i % 2 === 0 && "flex-row-reverse md:flex-row-reverse"
+                            i % 2 === 1 && "flex-row-reverse md:flex-row-reverse"
                         } flex items-center flex-col md:flex-row gap-x-10 gap-y-5 p-3 rounded-sm h-full`}
                     >
                         <Link
@@ -53,6 +53,12 @@ const ProjectsPage = () => {
                                     <small>Password: {project.credentials?.password}</small>
                                 </div>
                             )}
+
+                            <div className="flex space-x-2 py-2 text-sm dark:text-stone-300">
+                                {project.stacks?.map((project, i) => (
+                                    <span key={i}>{project}</span>
+                                ))}
+                            </div>
 
                             <div className="flex space-x-3">
                                 <Button url={project.href}>Live</Button>
