@@ -18,12 +18,11 @@ const TechStack = () => {
 
                 <div className="flex gap-x-10 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {frontendStacks.map((stack) => (
-                        <span key={stack.alt} className="">
+                        <span key={stack.alt}>
                             <Image
-                                className={`dark:filter dark:grayscale cursor-pointer transition-all duration-300 border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
-                                    stack.change
-                                        ? "dark:bg-red-300 dark:scale-75"
-                                        : "dark:hover:filter-none"
+                                className={` cursor-pointer transition-all duration-300 hover:border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
+                                    stack.change &&
+                                    "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
@@ -45,10 +44,9 @@ const TechStack = () => {
                     {backendStacks.map((stack) => (
                         <span key={stack.alt}>
                             <Image
-                                className={`dark:filter dark:grayscale cursor-pointer transition-all duration-300 border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
-                                    stack.change
-                                        ? "dark:bg-red-300 dark:scale-75"
-                                        : "dark:hover:filter-none"
+                                className={`cursor-pointer transition-all duration-300 hover:border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
+                                    stack.change &&
+                                    "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
