@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 const HomePage = () => {
     return (
         <section className="p-2 md:mb-0 mb-20 max-w-[110rem] mx-auto">
-            <div className="flex items-center md:pt-10 gap-x-10 gap-y-5 flex-col-reverse lg:flex-row">
+            <div className="flex items-center md:pt-10 gap-x-10 gap-y-5 flex-col-reverse lg:flex-row sm:py-16 pt-14 pb-20">
                 <div className="text-sm w-full text-center md:text-left">
                     <div className="mb-5 text-lg font-medium italic">
                         <Typewriter
