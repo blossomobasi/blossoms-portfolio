@@ -36,7 +36,7 @@ const HomePage = () => {
 
                     {/* Social media links */}
                     <SocialIcons />
-                    <div className="my-5 font-medium text-stone-800 dark:text-stone-400">
+                    <div className="my-5 font-medium text-stone-800 dark:text-stone-400 flex md:justify-start justify-center">
                         <a
                             href="https://wa.me/2349039477184"
                             target="_blank"
