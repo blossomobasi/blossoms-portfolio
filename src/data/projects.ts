@@ -1,13 +1,13 @@
 interface IProjects {
-    href: string;
-    src: string;
-    alt: string;
-    title: string;
+    href?: string;
+    src?: string;
+    alt?: string;
+    title?: string;
     development?: boolean;
     collaboration?: boolean;
     content: string;
     stacks?: string[];
-    githubLink: string;
+    githubLink?: string;
     credentials?: { email: string; password: string };
 }
 
@@ -64,5 +64,12 @@ export const projects: IProjects[] = [
         content:
             "Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
         githubLink: "https://github.com/blossomobasi/tridehq-clone",
+    }),
+    createProject({
+        title: "Coming Soon",
+        content:
+            "I'm currently working on a couple of projects. I'll update this section as soon as I'm done.",
+        src: "/under_construction.svg",
+        alt: "Coming Soon",
     }),
 ];
