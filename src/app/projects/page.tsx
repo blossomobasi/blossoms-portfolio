@@ -24,10 +24,17 @@ const ProjectsPage = () => {
                     >
                         <Link
                             target="_blank"
-                            href={project.href}
-                            className="flex-1 -z-10 border border-stone-200 hover:border-stone-400 dark:border-stone-900 p-2 relative"
+                            href={project.href || ""}
+                            className={`flex-1 -z-10 ${
+                                project.href && "border"
+                            } border-stone-200 hover:border-stone-400 dark:border-stone-900 p-2 relative`}
                         >
-                            <Image src={project.src} alt={project.alt} width={1000} height={1000} />
+                            <Image
+                                src={project.src || ""}
+                                alt={project.alt || ""}
+                                width={1000}
+                                height={1000}
+                            />
                             {project.collaboration && (
                                 <span className="absolute bottom-0 right-0 bg-purple-100 text-purple-500 border border-purple-500 dark:text-purple-700 dark:bg-purple-200 dark:border-purple-700 rounded-tl-full px-1.5 pl-3 text-sm">
                                     Collaboration
@@ -60,12 +67,14 @@ const ProjectsPage = () => {
                                 ))}
                             </div>
 
-                            <div className="flex space-x-3">
-                                <Button url={project.href}>Live</Button>
-                                <Icon title="Github" url={project.githubLink}>
-                                    <FaGithub />
-                                </Icon>
-                            </div>
+                            {project.href && project.githubLink && (
+                                <div className="flex space-x-3">
+                                    <Button url={project.href}>Live</Button>
+                                    <Icon title="Github" url={project.githubLink}>
+                                        <FaGithub />
+                                    </Icon>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
