@@ -6,7 +6,7 @@ const Logo = () => {
             href="/"
             className="font-bold italic tracking-widest text-stone-600 hover:text-black dark:text-stone-300"
         >
-            Blossom.dev
+            Blossom.Obasi
         </Link>
     );
 };
