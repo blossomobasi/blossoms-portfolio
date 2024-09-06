@@ -2,15 +2,9 @@ import Image from "next/image";
 
 const AboutSlice1 = () => {
     return (
-        <div className="flex md:gap-x-20 gap-y-10 items-center flex-col md:flex-row">
-            <div className="h-fit w-full rounded-2xl overflow-hidden">
-                <Image
-                    src="/dedicated_programmer.svg"
-                    alt="Laptop"
-                    className="h-[20rem] w-[30rem]"
-                    width={1000}
-                    height={1000}
-                />
+        <div className="flex md:gap-x-10 gap-y-10 items-center flex-col md:flex-row">
+            <div className="h-fit w-full overflow-hidden">
+                <Image src="/dedicated_programmer.svg" alt="Laptop" width={1000} height={1000} />
             </div>
 
             <div className="w-full text-center md:text-left">
