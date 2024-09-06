@@ -37,7 +37,7 @@ export default function RootLayout({
                     className={`${montserrat_alternates.className} dark:bg-[#0a0a0a] dark:text-stone-200 selection:bg-stone-500 selection:text-white`}
                 >
                     <NavBar />
-                    <section className="lg:px-40 md:px-20 px-5 pt-16">{children}</section>
+                    <section className="lg:px-24 md:px-14 px-5 pt-16">{children}</section>
                     <Footer />
 
                     <ScrollUpButton />
