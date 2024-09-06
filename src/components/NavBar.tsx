@@ -26,8 +26,8 @@ const NavBar = () => {
     ];
 
     return (
-        <header className="border-b border-b-stone-50 fixed shadow-sm bg-white/95 dark:bg-black/90 dark:border-b-stone-900 w-full flex justify-center">
-            <div className="flex w-full items-center justify-between h-14 md:px-10 px-5 max-w-[110rem]">
+        <header className="border-b border-b-stone-50 fixed shadow-sm  dark:border-b-stone-900 w-full flex justify-center dark:bg-black/25 bg-white/25">
+            <div className="flex w-full items-center justify-between h-20 md:px-10 px-5 max-w-[110rem]">
                 <Logo />
                 <nav className="flex items-center space-x-10">
                     <ul className="sm:block hidden space-x-8 font-medium text-stone-600 dark:text-stone-500">
@@ -88,9 +88,9 @@ const NavBar = () => {
 
                 {/* Mobile screen */}
                 <nav
-                    className={`bg-white dark:bg-black border-r dark:border-r-stone-800 top-0 ${
+                    className={`bg-white z-[100] dark:bg-black border-r dark:border-r-stone-800 top-0 ${
                         showNav ? "left-0" : "-left-[30rem]"
-                    } absolute h-screen font-medium w-[65%] z-50 transition-all ease-in-out duration-500 sm:hidden`}
+                    } absolute h-screen font-medium w-[65%] transition-all ease-in-out duration-500 sm:hidden`}
                 >
                     <ul className="p-2 flex flex-col items-center gap-y-10 pt-20 text-stone-600">
                         {navLinks.map((link) => {
