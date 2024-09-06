@@ -13,7 +13,7 @@ import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
     return (
-        <section className="md:my-20 my-10 max-w-[110rem] mx-auto">
+        <section className="md:my-20 my-10 max-w-[90rem] mx-auto">
             <TextHeader>Contact Me</TextHeader>
 
             <div className="flex md:flex-row flex-col md:gap-20 gap-10">
