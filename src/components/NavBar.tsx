@@ -58,14 +58,12 @@ const NavBar = () => {
                     </span>
                 </nav>
 
-                <div className="flex items-center space-x-5 sm:hidden">
+                <div className="flex items-center space-x-3 sm:hidden">
                     {/* Dark mode toggle */}
                     {!showNav && (
                         <span
                             onClick={() => setIsDarkMode(!isDarkMode)}
-                            className={`cursor-pointer sm:hidden p-1.5 rounded-md hover:bg-slate-50 ${
-                                !isDarkMode && "hover:bg-slate-50"
-                            } dark:hover:bg-stone-800`}
+                            className="cursor-pointer sm:hidden p-1.5 rounded-full border border-stone-300 dark:border-stone-800"
                         >
                             {isDarkMode ? (
                                 <MdOutlineLightMode size={25} />
@@ -79,7 +77,7 @@ const NavBar = () => {
                     {!showNav && (
                         <span
                             onClick={() => setShowNav(true)}
-                            className="sm:hidden block hover:bg-slate-50 dark:hover:bg-stone-800 p-1.5 rounded-md cursor-pointer"
+                            className="sm:hidden block border border-stone-300 dark:border-stone-800 p-1.5 rounded-md cursor-pointer"
                         >
                             <CgMenuRight size={25} />
                         </span>
@@ -115,7 +113,9 @@ const NavBar = () => {
 
                     <span
                         onClick={() => setShowNav(false)}
-                        className="bg-white dark:bg-stone-300 dark:text-black p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer"
+                        className={`border border-stone-300 dark:border-stone-800 p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer transition-all duration-100 ${
+                            showNav && "rotate-180"
+                        }`}
                     >
                         <LiaTimesSolid size={27} />
                     </span>
