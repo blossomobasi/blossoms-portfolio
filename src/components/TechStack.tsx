@@ -1,4 +1,8 @@
-import { frontendStacks as frontendStacksApi, tools as toolsApi, backendStacks as backendStacksApi } from "@/data/techStack";
+import {
+    frontendStacks as frontendStacksApi,
+    tools as toolsApi,
+    backendStacks as backendStacksApi,
+} from "@/data/techStack";
 import Image from "next/image";
 import TextHeader from "./TextHeader";
 
