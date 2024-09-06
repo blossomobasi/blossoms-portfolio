@@ -5,7 +5,7 @@ import TextHeader from "@/components/TextHeader";
 
 const AboutPage = () => {
     return (
-        <section className="pt-5 max-w-[110rem] mx-auto">
+        <section className="py-10 max-w-[90rem] mx-auto">
             <TextHeader>About Me</TextHeader>
 
             <AboutSlice1 />
