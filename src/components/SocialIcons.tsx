@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const SocialIcons = () => {
     return (
-        <div className="flex md:justify-start justify-center mt-5 gap-3">
+        <div className="flex justify-start mt-5 gap-3">
             <Icon url="https://github.com/blossomobasi" title="Github">
                 <FaGithub />
             </Icon>
