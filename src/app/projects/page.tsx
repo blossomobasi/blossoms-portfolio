@@ -11,8 +11,13 @@ const ProjectsPage = () => {
     const projects = projectApi;
 
     return (
-        <section className="max-w-[110rem] pt-5 mx-auto">
+        <section className="max-w-[90rem] my-14 mx-auto">
             <TextHeader>Projects</TextHeader>
+            <p className="md:w-[35rem] -mt-4 mb-5 dark:text-stone-400">
+                I&apos;ve worked on a number of projects over the years but these are the ones
+                I&apos;m most proud of. Some are personal projects, some are collaborations and some
+                are client projects.
+            </p>
 
             <div className="space-y-10 md:space-y-10">
                 {projects.map((project, i) => (
