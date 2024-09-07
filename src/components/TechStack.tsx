@@ -20,11 +20,14 @@ const TechStack = () => {
                     Front-end
                 </h2>
 
-                <div className="flex gap-x-10 gap-y-5 flex-wrap items-center flex-shrink-0">
+                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {frontendStacks.map((stack) => (
-                        <span key={stack.alt}>
+                        <span
+                            key={stack.alt}
+                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                        >
                             <Image
-                                className={` cursor-pointer transition-all duration-300 hover:border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
+                                className={`cursor-pointer p-2 rounded-md ${
                                     stack.change &&
                                     "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
                                 }`}
@@ -46,9 +49,12 @@ const TechStack = () => {
 
                 <div className="flex space-x-10 flex-wrap items-center flex-shrink-0">
                     {backendStacks.map((stack) => (
-                        <span key={stack.alt}>
+                        <span
+                            key={stack.alt}
+                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                        >
                             <Image
-                                className={`cursor-pointer transition-all duration-300 hover:border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
+                                className={`cursor-pointer p-2 rounded-md ${
                                     stack.change &&
                                     "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
                                 }`}
@@ -70,9 +76,12 @@ const TechStack = () => {
 
                 <div className="flex space-x-10 flex-wrap items-center flex-shrink-0">
                     {tools.map((stack) => (
-                        <span key={stack.alt}>
+                        <span
+                            key={stack.alt}
+                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                        >
                             <Image
-                                className={`cursor-pointer transition-all duration-300 hover:border dark:border-[#0a0a0a] dark:hover:border-white p-2 border-stone-300 rounded-md ${
+                                className={`cursor-pointer p-2 rounded-md ${
                                     stack.change &&
                                     "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
                                 }`}
