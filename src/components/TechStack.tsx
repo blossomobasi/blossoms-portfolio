@@ -47,7 +47,7 @@ const TechStack = () => {
                     Back-end
                 </h2>
 
-                <div className="flex space-x-10 flex-wrap items-center flex-shrink-0">
+                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {backendStacks.map((stack) => (
                         <span
                             key={stack.alt}
@@ -74,7 +74,7 @@ const TechStack = () => {
                     Tools
                 </h2>
 
-                <div className="flex space-x-10 flex-wrap items-center flex-shrink-0">
+                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {tools.map((stack) => (
                         <span
                             key={stack.alt}
