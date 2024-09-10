@@ -41,7 +41,7 @@ const AboutMe = () => {
     return (
         <div className="lg:w-[60%] text-stone-800 dark:text-stone-400">
             <h1 className="sm:text-5xl text-4xl font-semibold mt-5">I&apos;m Blossom Obasi.</h1>
-            <div className="text-lg font-medium mt-6">
+            <div className="mt-6">
                 <p>
                     A software engineer that specializes in building dynamic and responsive web
                     applications. I work with technologies on the client side like Javascript,
@@ -74,7 +74,7 @@ const AboutMe = () => {
                     <h2 className="text-2xl font-semibold mb-5">Soft skills</h2>
                     <p className="pb-3">Few skills I&apos;ve developed over the years include:</p>
 
-                    <ul className="text-lg space-y-5">
+                    <ul className="space-y-5">
                         {softSkill.map((skill, index) => (
                             <li key={index} className="flex">
                                 <p>
