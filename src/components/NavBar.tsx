@@ -26,7 +26,10 @@ const NavBar = () => {
     ];
 
     return (
-        <header className="border-b border-b-stone-50 fixed shadow-sm  dark:border-b-stone-900 w-full flex justify-center dark:bg-black/25 bg-white/25">
+        <header
+            className="border-b border-b-stone-50 fixed shadow-sm dark:border-b-stone-900 w-full flex justify-center dark:bg-black/80 bg-white/80"
+            style={{ backgroundImage: "url(/images/noise.png)" }}
+        >
             <div className="flex w-full items-center justify-between h-20 md:px-10 px-5 max-w-[110rem]">
                 <Logo />
                 <nav className="flex items-center space-x-10">
