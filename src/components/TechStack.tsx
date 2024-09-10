@@ -24,12 +24,11 @@ const TechStack = () => {
                     {frontendStacks.map((stack) => (
                         <span
                             key={stack.alt}
-                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change &&
-                                    "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
+                                    stack.change && "bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
@@ -51,12 +50,11 @@ const TechStack = () => {
                     {backendStacks.map((stack) => (
                         <span
                             key={stack.alt}
-                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change &&
-                                    "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
+                                    stack.change && "bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
@@ -78,12 +76,11 @@ const TechStack = () => {
                     {tools.map((stack) => (
                         <span
                             key={stack.alt}
-                            className="border border-stone-400 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change &&
-                                    "dark:filter dark:grayscale dark:bg-red-300 dark:scale-75"
+                                    stack.change && "bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}

@@ -11,7 +11,7 @@ const HomePage = () => {
     return (
         <section className="p-2 md:mb-0 mb-20 max-w-[90rem] mx-auto">
             <div className="flex items-center md:py-32 py-20 gap-x-10 gap-y-5 flex-col lg:flex-row">
-                <div className="text-sm w-full">
+                <div className="text-sm w-full sm:text-start text-center">
                     <div className="mb-5 text-lg font-medium italic">
                         <Typewriter
                             words={["Hey There, I'm Blossom 👋🏻", "Lovely meeting you😊"]}
@@ -37,7 +37,7 @@ const HomePage = () => {
 
                     {/* Social media links */}
                     <SocialIcons />
-                    <div className="my-5 font-medium text-stone-800 dark:text-stone-400 flex">
+                    <div className="my-5 font-medium text-stone-800 dark:text-stone-400 flex sm:justify-start justify-center">
                         <Link
                             href="https://wa.me/2349039477184"
                             target="_blank"
