@@ -10,7 +10,7 @@ const AboutSlice3 = () => {
                 <h2 className="text-2xl font-semibold">
                     What I do for fun beyond coding <span className="font-light">〰</span>
                 </h2>
-                <p className="mt-3 text-sm text-stone-700 dark:text-stone-500">
+                <p className="mt-3 text-stone-700 dark:text-stone-500">
                     I find immense joy in problem-solving. While it may be challenging at times, the
                     satisfaction of overcoming obstacles fuels my passion for programming.{" "}
                     <span className="font-semibold text-black dark:text-stone-300">

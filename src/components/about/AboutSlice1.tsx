@@ -11,7 +11,7 @@ const AboutSlice1 = () => {
                 <h2 className="text-2xl font-semibold">
                     A dedicated Developer based in Lagos, Nigeria 📍
                 </h2>
-                <p className="mt-3 text-sm text-stone-700 dark:text-stone-500">
+                <p className="mt-3 text-stone-700 dark:text-stone-500">
                     I&apos;m currently pursuing a degree in Computer Science at Lagos State
                     University, now in my final year. My journey in the world of technology has been
                     both exciting and challenging.
