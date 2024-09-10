@@ -60,7 +60,7 @@ const AboutMe = () => {
 
                 <h2 className="text-2xl font-semibold mb-5">Favorite Quote</h2>
                 <blockquote
-                    className="border border-stone-300 dark:border-stone-900 rounded-md w-fit p-5"
+                    className="border border-stone-300 dark:border-stone-900 rounded-md w-fit p-5 text-right italic"
                     style={{
                         backgroundImage: "url(/images/noise.png)",
                         backgroundSize: "cover",
