@@ -34,7 +34,7 @@ export default function RootLayout({
         <DarkModeProvider>
             <html lang="en">
                 <body
-                    className={`${montserrat_alternates.className} dark:bg-[#0a0a0a] dark:text-stone-200 selection:bg-stone-500 selection:text-white`}
+                    className={`${montserrat_alternates.className} dark:bg-[#0a0a0a] text-stone-700 dark:text-stone-400 selection:bg-stone-500 selection:text-white`}
                 >
                     <NavBar />
                     <section className="lg:px-24 md:px-14 px-5 pt-16">{children}</section>
