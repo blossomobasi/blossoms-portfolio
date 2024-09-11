@@ -32,7 +32,7 @@ const HomePage = () => {
                         </span>
                         , I specialize in building dynamic, scalable, and high-performance web
                         applications that deliver seamless user experiences by focusing on
-                        functionality, flexibility, and user engagement."
+                        functionality, flexibility, and user engagement.
                     </p>
 
                     {/* Social media links */}
