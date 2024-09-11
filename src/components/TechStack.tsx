@@ -12,11 +12,11 @@ const TechStack = () => {
     const tools = toolsApi;
 
     return (
-        <div className="mt-10">
+        <div className="mt-5">
             <TextHeader>Technologies I work with</TextHeader>
 
             <div>
-                <h2 className="text-2xl font-semibold py-5 text-stone-800 dark:text-stone-300">
+                <h2 className="text-2xl font-semibold py-5">
                     Front-end
                 </h2>
 
@@ -42,7 +42,7 @@ const TechStack = () => {
             </div>
 
             <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5 text-stone-800 dark:text-stone-300">
+                <h2 className="text-2xl font-semibold py-5">
                     Back-end
                 </h2>
 
@@ -68,7 +68,7 @@ const TechStack = () => {
             </div>
 
             <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5 text-stone-800 dark:text-stone-300">
+                <h2 className="text-2xl font-semibold py-5">
                     Tools
                 </h2>
 
