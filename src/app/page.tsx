@@ -23,16 +23,16 @@ const HomePage = () => {
                         />
                     </div>
                     <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
-                        Fullstack Developer
+                        Software Engineer
                     </h1>
-                    <p className="mt-3 text-stone-700 dark:text-stone-500 text-base">
-                        Hi! I&apos;m{" "}
-                        <span className="font-semibold text-base text-black dark:text-stone-300">
+                    <p className="mt-3 text-stone-700 dark:text-stone-500 text-lg">
+                        I&apos;m{" "}
+                        <span className="font-semibold text-black dark:text-stone-300">
                             Blossom Obasi
                         </span>
-                        , a self-taught developer with over a year of experience, I specialize in
-                        building dynamic, flexible, and highly functional web applications designed
-                        for a seamless user experience.
+                        , I specialize in building dynamic, scalable, and high-performance web
+                        applications that deliver seamless user experiences by focusing on
+                        functionality, flexibility, and user engagement."
                     </p>
 
                     {/* Social media links */}
