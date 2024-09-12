@@ -54,7 +54,7 @@ const NavBar = () => {
 
                     {/* Dark mode toggle */}
                     <span
-                        onClick={() => setIsDarkMode(!isDarkMode)}
+                        onClick={() => setIsDarkMode((prev) => !prev)}
                         className="cursor-pointer hidden sm:block"
                     >
                         {isDarkMode ? <MdOutlineLightMode size={25} /> : <MdDarkMode size={25} />}
@@ -65,7 +65,7 @@ const NavBar = () => {
                     {/* Dark mode toggle */}
                     {!showNav && (
                         <span
-                            onClick={() => setIsDarkMode(!isDarkMode)}
+                            onClick={() => setIsDarkMode((prev) => !prev)}
                             className="cursor-pointer sm:hidden p-1.5 rounded-full border border-stone-300 dark:border-stone-800"
                         >
                             {isDarkMode ? (
