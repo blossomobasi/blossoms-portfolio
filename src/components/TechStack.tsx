@@ -16,9 +16,7 @@ const TechStack = () => {
             <TextHeader>Technologies I work with</TextHeader>
 
             <div>
-                <h2 className="text-2xl font-semibold py-5">
-                    Front-end
-                </h2>
+                <h2 className="text-2xl font-semibold py-5">Front-end</h2>
 
                 <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {frontendStacks.map((stack) => (
@@ -28,7 +26,7 @@ const TechStack = () => {
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "bg-gray-300"
+                                    stack.change && "dark:bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
@@ -42,9 +40,7 @@ const TechStack = () => {
             </div>
 
             <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5">
-                    Back-end
-                </h2>
+                <h2 className="text-2xl font-semibold py-5">Back-end</h2>
 
                 <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {backendStacks.map((stack) => (
@@ -54,7 +50,7 @@ const TechStack = () => {
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "bg-gray-300"
+                                    stack.change && "dark:bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
@@ -68,9 +64,7 @@ const TechStack = () => {
             </div>
 
             <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5">
-                    Tools
-                </h2>
+                <h2 className="text-2xl font-semibold py-5">Tools</h2>
 
                 <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
                     {tools.map((stack) => (
@@ -80,7 +74,7 @@ const TechStack = () => {
                         >
                             <Image
                                 className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "bg-gray-300"
+                                    stack.change && "dark:bg-gray-300"
                                 }`}
                                 title={stack.alt}
                                 src={stack.src}
