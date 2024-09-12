@@ -15,14 +15,26 @@ const DarkModeContext = createContext<DarkModeContextType>({
 function DarkModeProvider({ children }: { children: React.ReactNode }) {
     const [isDarkMode, setIsDarkMode] = useState(() => {
         if (typeof window !== "undefined") {
-            const localData = localStorage.getItem("darkMode");
-            return localData ? JSON.parse(localData) : false;
+            // Detect system preference
+            return window.matchMedia("(prefers-color-scheme: dark)").matches;
         }
         return false;
     });
 
     useEffect(() => {
-        localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const handleChange = (event: MediaQueryListEvent) => {
+            setIsDarkMode(event.matches);
+        };
+
+        mediaQuery.addEventListener("change", handleChange);
+
+        // Cleanup listener on unmount
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, []);
+
+    useEffect(() => {
         if (isDarkMode) {
             document.documentElement.classList.add("dark");
         } else {
@@ -39,7 +51,7 @@ function DarkModeProvider({ children }: { children: React.ReactNode }) {
 
 function useDarkMode() {
     const context = useContext(DarkModeContext);
-    if (context === undefined) {
+    if (!context) {
         throw new Error("useDarkMode must be used within a DarkModeProvider");
     }
     return context;
