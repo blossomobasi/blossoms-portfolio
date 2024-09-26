@@ -111,9 +111,9 @@ const AboutMe = () => {
             <h1 className="sm:text-5xl text-4xl font-bold mt-5">I&apos;m Blossom Obasi.</h1>
             <div className="mt-6">
                 <p>
-                    A self-taught software engineer specializing in building dynamic and responsive
+                    A self-taught developer specialized in building dynamic and responsive
                     web applications. I work with client-side technologies such as JavaScript,
-                    React, Next.js, and Vite, with TypeScript for configuration.
+                    React, Next.js, and Vite, with TypeScript for configuration, and server-side technologies such as Node.js, Express and Mongodb
                 </p>
                 <br />
                 <p>
