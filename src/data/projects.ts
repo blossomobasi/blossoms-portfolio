@@ -34,6 +34,20 @@ export const projects: IProjects[] = [
         githubLink: "https://github.com/blossomobasi/sesto-elemento",
     }),
     createProject({
+        href: "https://blogssom.vercel.app/",
+        src: "/images/blogssom-project.png",
+        alt: "Blogssom Project",
+        title: "Blogssom - Blog your way round the world.",
+        content:
+            "Blogssom is a platform that allows users create and share their thoughts, ideas, and experiences about their travels and adventures to the world.",
+        stacks: ["React", "Tailwind CSS", "TypeScript", "Node.js", "Express", "MongoDB"],
+        credentials: {
+            email: "janedoe@gmail.com",
+            password: "password",
+        },
+        githubLink: "https://github.com/blossomobasi/blogssom",
+    }),
+    createProject({
         href: "https://www.chowgoo.com/",
         src: "/images/chowgoo.png",
         alt: "Chowgoo Project",

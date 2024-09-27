@@ -61,12 +61,22 @@ const ProjectsPage = () => {
                             )}
                             {project?.credentials && (
                                 <div className="mb-2 flex flex-col text-green-700">
-                                    <small>Email: {project.credentials?.email}</small>
-                                    <small>Password: {project.credentials?.password}</small>
+                                    <small>
+                                        Email:{" "}
+                                        <span className="select-all">
+                                            {project.credentials?.email}
+                                        </span>
+                                    </small>
+                                    <small>
+                                        Password:{" "}
+                                        <span className="select-all">
+                                            {project.credentials?.password}
+                                        </span>
+                                    </small>
                                 </div>
                             )}
 
-                            <div className="flex space-x-2 py-2 text-sm dark:text-stone-300">
+                            <div className="flex gap-2 py-2 text-sm dark:text-stone-300 flex-wrap">
                                 {project.stacks?.map((project, i) => (
                                     <span key={i}>{project}</span>
                                 ))}

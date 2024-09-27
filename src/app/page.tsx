@@ -23,7 +23,7 @@ const HomePage = () => {
                         />
                     </div>
                     <h1 className="lg:text-6xl md:text-5xl text-3xl font-extrabold">
-                        Software Engineer
+                        Fullstack Developer
                     </h1>
                     <p className="mt-3 text-stone-700 dark:text-stone-500 text-lg">
                         I&apos;m{" "}
