@@ -52,7 +52,6 @@ export const projects: IProjects[] = [
         src: "/images/chowgoo.png",
         alt: "Chowgoo Project",
         title: "CHOWGOO - where speed meets satisfaction",
-        development: true,
         collaboration: true,
         stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript", "React Query"],
         content:
@@ -64,7 +63,7 @@ export const projects: IProjects[] = [
         src: "/images/pluralcode-test-project.png",
         alt: "Plural Code Test Project",
         title: "Plural Code Test App",
-        stacks: ["React", "Tailwind CSS", "TypeScript", "Context API"],
+        stacks: ["React", "Nextjs", "Tailwind CSS", "TypeScript", "Context API"],
         content:
             "This project includes concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
         githubLink: "https://github.com/blossomobasi/pluralcode-test-app",
