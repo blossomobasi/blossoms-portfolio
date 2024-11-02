@@ -24,6 +24,17 @@ function createProject(props: IProjects): IProjects {
 
 export const projects: IProjects[] = [
     createProject({
+        href: "https://organic-foodie-ecommerce.vercel.app/",
+        src: "/images/organic-foodie.png",
+        alt: "Organic Foodie Project",
+        title: "Organic Foodie - Organic Snacks Made with Love, Just for You",
+        content:
+            "Organic Foodie is an e-commerce platform that offers a wide range of organic snacks and food, made with love and care, just for you.",
+        development: true,
+        stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript", "React Query"],
+        githubLink: "https://github.com/blossomobasi/organic_foodie_ecommerce",
+    }),
+    createProject({
         href: "https://sesto-elemento.vercel.app/",
         src: "/images/sesto_elemento.png",
         alt: "Sesto Elemento Project",
