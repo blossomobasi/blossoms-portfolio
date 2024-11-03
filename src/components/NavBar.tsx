@@ -8,9 +8,12 @@ import { useDarkMode } from "@/context/DarkModeContext";
 import Logo from "./Logo";
 
 import { CgMenuRight } from "react-icons/cg";
-import { LiaTimesSolid } from "react-icons/lia";
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
+import { FaArrowLeft } from "react-icons/fa";
+import { GiChemicalDrop } from "react-icons/gi";
+import { IoCallOutline } from "react-icons/io5";
+import { CiHome, CiUser } from "react-icons/ci";
 
 const NavBar = () => {
     const pathname = usePathname();
@@ -23,6 +26,13 @@ const NavBar = () => {
         { label: "About", href: "/about" },
         { label: "Projects", href: "/projects" },
         { label: "Contact", href: "/contact" },
+    ];
+
+    const navLinksMobile = [
+        { label: "Home", href: "/", Icon: CiHome },
+        { label: "About", href: "/about", Icon: CiUser },
+        { label: "Projects", href: "/projects", Icon: GiChemicalDrop },
+        { label: "Contact", href: "/contact", Icon: IoCallOutline },
     ];
 
     return (
@@ -91,37 +101,38 @@ const NavBar = () => {
                 <nav
                     className={`bg-white z-[100] dark:bg-black border-r dark:border-r-stone-800 top-0 ${
                         showNav ? "left-0" : "-left-[30rem]"
-                    } absolute h-screen font-medium w-[65%] transition-all ease-in-out duration-500 sm:hidden`}
+                    } absolute h-screen font-medium w-full transition-all ease-in-out duration-500 sm:hidden`}
                 >
-                    <ul className="p-2 flex flex-col items-center gap-y-10 pt-20 text-stone-600">
-                        {navLinks.map((link) => {
+                    <div className="flex items-center justify-between p-5">
+                        <Logo />
+
+                        <span onClick={() => setShowNav(false)} className="cursor-pointer">
+                            <FaArrowLeft size={25} />
+                        </span>
+                    </div>
+
+                    <ul className="p-2 flex flex-col pt-5">
+                        {navLinksMobile.map(({ href, Icon, label }) => {
                             return (
                                 <Link
+                                    href={href}
+                                    key={href}
                                     onClick={() => {
-                                        setIsActive(link.href);
+                                        setIsActive(href);
                                         setShowNav(false);
                                     }}
-                                    className={`hover:bg-slate-50 dark:hover:text-black dark:hover:bg-stone-300 w-28 rounded-sm py-1 text-center ${
-                                        isActive === link.href &&
-                                        "bg-slate-50 dark:bg-stone-300 dark:text-black text-black"
+                                    className={`h-16 flex items-center space-x-3 px-3 w-full border-b dark:border-b-stone-900 dark:hover:text-white hover:text-black hover:font-semibold ${
+                                        isActive === href &&
+                                        "dark:text-white text-black font-semibold"
                                     }`}
-                                    key={link.href}
-                                    href={link.href}
                                 >
-                                    {link.label}
+                                    <Icon size={25} />
+
+                                    <p>{label}</p>
                                 </Link>
                             );
                         })}
                     </ul>
-
-                    <span
-                        onClick={() => setShowNav(false)}
-                        className={`border border-stone-300 dark:border-stone-800 p-1.5 absolute top-3 -right-12 h-8 w-8 flex items-center justify-center rounded-full cursor-pointer transition-all duration-100 ${
-                            showNav && "rotate-180"
-                        }`}
-                    >
-                        <LiaTimesSolid size={27} />
-                    </span>
                 </nav>
 
                 {/* Overlay */}
