@@ -10,15 +10,10 @@ const NextButton = () => {
     const [nextPathname, setNextPathname] = useState("");
 
     useEffect(() => {
-        pathname === "/"
-            ? setNextPathname("About")
-            : pathname === "/about"
-            ? setNextPathname("Projects")
-            : pathname === "/projects"
-            ? setNextPathname("Contact")
-            : pathname === "/contact"
-            ? setNextPathname("")
-            : "";
+            pathname === '/' && setNextPathname('About')
+            pathname === '/about' && setNextPathname('Projects')
+            pathname === '/projects' && setNextPathname('Contact')
+            pathname === '/contact' && setNextPathname('')
     }, [pathname]);
 
     return (

@@ -10,15 +10,10 @@ const PrevButton = () => {
     const [prevPathname, setPrevPathname] = useState("");
 
     useEffect(() => {
-        pathname === "/"
-            ? setPrevPathname("")
-            : pathname === "/about"
-            ? setPrevPathname("Home")
-            : pathname === "/projects"
-            ? setPrevPathname("About")
-            : pathname === "/contact"
-            ? setPrevPathname("Projects")
-            : "";
+        pathname === "/" && setPrevPathname("");
+        pathname === "/about" && setPrevPathname("Home");
+        pathname === "/projects" && setPrevPathname("About");
+        pathname === "/contact" && setPrevPathname("Projects");
     }, [pathname]);
 
     return (
