@@ -39,6 +39,7 @@ const ProjectsPage = () => {
                                 alt={project.alt || ""}
                                 width={1000}
                                 height={1000}
+                                priority={project.alt === "Organic Foodie Project"}
                             />
                             {project.collaboration && (
                                 <span className="absolute bottom-0 right-0 bg-purple-100 text-purple-500 border border-purple-500 dark:text-purple-700 dark:bg-purple-200 dark:border-purple-700 rounded-tl-full px-1.5 pl-3 text-sm">
