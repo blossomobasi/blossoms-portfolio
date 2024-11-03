@@ -55,8 +55,7 @@ const ProjectsPage = () => {
                             {/* Currently In Development */}
                             {project?.development && (
                                 <small className="block mb-3 text-red-500">
-                                    This project is currently in development &mdash; Though Landing
-                                    page can be viewed
+                                    This project is currently under development.
                                 </small>
                             )}
                             {project?.credentials && (
