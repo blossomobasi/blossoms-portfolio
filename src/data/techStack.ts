@@ -12,12 +12,14 @@ export const frontendStacks = [
 export const backendStacks = [
     { src: "/images/mongodb.svg", alt: "Mongodb" },
     { src: "/images/nodejs.svg", alt: "Nodejs" },
+    { src: "/images/express.svg", alt: "Expressjs", change: true },
+    { src: "/images/nestjs.svg", alt: "Nestjs" },
     { src: "/images/supabase.png", alt: "Supabase" },
-    { src: "/images/express.svg", alt: "Express js", change: true },
 ];
 
 export const tools = [
     { src: "/images/git.svg", alt: "Git", change: true },
     { src: "/images/github.svg", alt: "Github", change: true },
     { src: "/images/vscode.svg", alt: "Vscode" },
+    { src: "/images/postman.svg", alt: "Postman" },
 ];

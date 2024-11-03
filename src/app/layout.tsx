@@ -40,7 +40,7 @@ export default function RootLayout({
                     <section className="lg:px-24 md:px-14 px-5 pt-16">{children}</section>
                     <Footer />
 
-                    <ScrollUpButton />
+                    {/* <ScrollUpButton /> */}
                     <PrevButton />
                     <NextButton />
                 </body>

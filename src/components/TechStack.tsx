@@ -15,76 +15,41 @@ const TechStack = () => {
         <div className="mt-5">
             <TextHeader>Technologies I work with</TextHeader>
 
-            <div>
-                <h2 className="text-2xl font-semibold py-5">Front-end</h2>
+            <DisplayStack data={frontendStacks} title="Front-end" />
+            <DisplayStack data={backendStacks} title="Back-end" />
+            <DisplayStack data={tools} title="Tools" />
+        </div>
+    );
+};
 
-                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
-                    {frontendStacks.map((stack) => (
-                        <span
-                            key={stack.alt}
-                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
-                        >
-                            <Image
-                                className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "dark:bg-gray-300"
-                                }`}
-                                title={stack.alt}
-                                src={stack.src}
-                                alt={stack.alt}
-                                width={60}
-                                height={60}
-                            />
-                        </span>
-                    ))}
-                </div>
-            </div>
+type DisplayStackProps = {
+    title: string;
+    data: { src: string; alt: string; change?: boolean }[];
+};
 
-            <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5">Back-end</h2>
+const DisplayStack = ({ title, data }: DisplayStackProps) => {
+    return (
+        <div className="mt-5">
+            <h2 className="text-2xl font-semibold py-5">{title}</h2>
 
-                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
-                    {backendStacks.map((stack) => (
-                        <span
-                            key={stack.alt}
-                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
-                        >
-                            <Image
-                                className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "dark:bg-gray-300"
-                                }`}
-                                title={stack.alt}
-                                src={stack.src}
-                                alt={stack.alt}
-                                height={60}
-                                width={60}
-                            />
-                        </span>
-                    ))}
-                </div>
-            </div>
-
-            <div className="mt-5">
-                <h2 className="text-2xl font-semibold py-5">Tools</h2>
-
-                <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
-                    {tools.map((stack) => (
-                        <span
-                            key={stack.alt}
-                            className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
-                        >
-                            <Image
-                                className={`cursor-pointer p-2 rounded-md ${
-                                    stack.change && "dark:bg-gray-300"
-                                }`}
-                                title={stack.alt}
-                                src={stack.src}
-                                alt={stack.alt}
-                                height={60}
-                                width={60}
-                            />
-                        </span>
-                    ))}
-                </div>
+            <div className="flex gap-x-5 gap-y-5 flex-wrap items-center flex-shrink-0">
+                {data.map((el) => (
+                    <span
+                        key={el.alt}
+                        className="border border-stone-300 bg-stone-100 dark:border-stone-800 dark:bg-[#0a0a0a] rounded-md p-2"
+                    >
+                        <Image
+                            className={`cursor-pointer p-2 rounded-md ${
+                                el.change && "dark:bg-gray-300"
+                            }`}
+                            title={el.alt}
+                            src={el.src}
+                            alt={el.alt}
+                            height={60}
+                            width={60}
+                        />
+                    </span>
+                ))}
             </div>
         </div>
     );
