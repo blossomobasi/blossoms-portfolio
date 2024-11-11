@@ -10,7 +10,7 @@ const SocialIcons = () => {
             <Icon url="https://github.com/blossomobasi" title="Github">
                 <FaGithub />
             </Icon>
-            <Icon url="https://www.linkedin.com/in/obasi-blossom-07063a25a/" title="Linked in">
+            <Icon url="https://www.linkedin.com/in/blossomobasi" title="Linked in">
                 <FaLinkedinIn />
             </Icon>
             <Icon url="https://www.instagram.com/blossomobasi_/" title="Instagram">
