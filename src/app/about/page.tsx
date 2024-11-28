@@ -113,15 +113,21 @@ const AboutMe = () => {
 
 				<div className="flex space-x-2 w-fit my-5">
 					<Link
-						href="/"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="/Blossom-Obasi-Fullstack-developer.pdf"
 						className="dark:bg-stone-900 bg-stone-200 p-3 w-60 flex justify-center items-center space-x-2 font-semibold rounded-md"
 					>
 						<span>View Resume</span>
 						<BiLinkExternal size={20} />
 					</Link>
-					<span className="p-3 bg-stone-200 dark:bg-stone-900 rounded-md">
+					<Link
+						href="/Blossom-Obasi-Fullstack-developer.pdf"
+						download="Blossom-Obasi-Fullstack-developer.pdf"
+						className="p-3 bg-stone-200 dark:bg-stone-900 rounded-md"
+					>
 						<BiSolidDownload size={20} />
-					</span>
+					</Link>
 				</div>
 				<br />
 				<br />
