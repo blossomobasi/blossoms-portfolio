@@ -44,6 +44,16 @@ export const projects: IProjects[] = [
 		githubLink: "https://github.com/blossomobasi/sesto-elemento",
 	}),
 	createProject({
+		href: "https://marvellous-childcare.vercel.app/",
+		src: "/images/marvellous-childcare.png",
+		alt: "Marvellous Childcare Project",
+		title: "Marvellous Childcare - Where Little Dreams Begin and Families Thrive",
+		content:
+			"Marvellous Childcare is a platform that provides a warm, safe, and stimulating environment where every child is nurtured and encouraged to grow. We are passionate about fostering creativity, building confidence, and supporting children in their journey to reach their full potential.",
+		stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript", "React Hook Form", "React Query", "Framer Motion"],
+		githubLink: "https://github.com/blossomobasi/marvellous-childcare",
+	}),
+	createProject({
 		href: "https://blogssom.vercel.app/",
 		src: "/images/blogssom-project.png",
 		alt: "Blogssom Project",
