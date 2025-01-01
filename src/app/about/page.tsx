@@ -99,9 +99,10 @@ const AboutMe = () => {
 			<h1 className="sm:text-5xl text-4xl font-bold mt-5">I&apos;m Blossom Obasi.</h1>
 			<div className="mt-6">
 				<p>
-					A self-taught developer specialized in building dynamic and responsive web applications. I work with
-					client-side technologies such as JavaScript, React, Next.js, and Vite, with TypeScript for configuration, and
-					server-side technologies such as Node.js, Express and Mongodb
+					A self-taught developer specializing in building dynamic, responsive web and mobile applications. I work with
+					client-side technologies such as JavaScript, React, Next.js, Vite (using TypeScript for configuration), and
+					React Native (Expo) for mobile app development. On the server side, I utilize technologies such as Nestjs,
+					Node.js, Express, MongoDB e.t.c to create robust and scalable solutions.
 				</p>
 				<br />
 				<p>
