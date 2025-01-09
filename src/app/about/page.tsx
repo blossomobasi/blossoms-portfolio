@@ -2,6 +2,8 @@ import Image from "next/image";
 import TextHeader from "@/components/TextHeader";
 import { BiLinkExternal, BiSolidDownload } from "react-icons/bi";
 import Link from "next/link";
+import { title } from "process";
+import { Metadata } from "next";
 
 const AboutSlice1 = () => {
 	return (
@@ -164,6 +166,12 @@ const AboutMe = () => {
 	);
 };
 
+export const metadata: Metadata = {
+	title: "About Me | Blossom Obasi",
+	description:
+		"Learn more about Blossom Obasi, a software engineer specializing in dynamic and high-performance web applications.",
+};
+
 const AboutPage = () => {
 	return (
 		<section className="py-10 max-w-[90rem] mx-auto">
@@ -173,7 +181,13 @@ const AboutPage = () => {
 				<AboutMe />
 
 				<div className="lg:w-[40%] w-full">
-					<Image src="/images/blossomobasi.jpg" alt="Blossom Obasi" height={500} width={500} className="rounded-2xl" />
+					<Image
+						src="/images/blossomobasi.jpg"
+						alt="Blossom Obasi"
+						height={500}
+						width={500}
+						className="rounded-2xl w-auto"
+					/>
 				</div>
 			</div>
 
