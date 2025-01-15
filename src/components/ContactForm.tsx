@@ -4,8 +4,17 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
 
+const MessageSent = () => {
+	return (
+		<div className="w-full h-28 flex items-center justify-center bg-green-200 text-green-800 dark:bg-green-800 dark:text-green-200">
+			<p>Message sent successfully!</p>
+		</div>
+	);
+};
+
 const ContactForm = () => {
 	const formRef = React.useRef<HTMLFormElement | null>(null);
+	const [messageSent, setMessageSent] = React.useState(false);
 
 	const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -14,14 +23,18 @@ const ContactForm = () => {
 			.sendForm("service_vrs32ld", "template_2oikmni", formRef.current as HTMLFormElement, "NCT2JkJVp3pNSSDN5")
 			.then(
 				() => {
-					console.log("Message successfully sent");
+					setMessageSent(true);
 					formRef.current?.reset();
 				},
 				(error) => {
-					console.log(error.text);
+					alert(`Failed to send email. Error: ${error}`);
 				}
 			);
 	};
+
+	if (messageSent) {
+		return <MessageSent />;
+	}
 
 	return (
 		<form ref={formRef} onSubmit={sendEmail} className="w-full space-y-5">
