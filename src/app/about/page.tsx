@@ -2,8 +2,8 @@ import Image from "next/image";
 import TextHeader from "@/components/TextHeader";
 import { BiLinkExternal, BiSolidDownload } from "react-icons/bi";
 import Link from "next/link";
-import { title } from "process";
 import { Metadata } from "next";
+import { Slide } from "../../../animation/Slide";
 
 const AboutSlice1 = () => {
 	return (
@@ -12,13 +12,13 @@ const AboutSlice1 = () => {
 				<Image src="/dedicated_programmer.svg" alt="Laptop" width={1000} height={1000} />
 			</div>
 
-			<div className="w-full text-center md:text-left">
+			<Slide towards="right" delay={0.5} className="w-full text-center md:text-left">
 				<h2 className="text-2xl font-semibold">A dedicated Developer based in Lagos, Nigeria 📍</h2>
 				<p className="mt-3">
 					I&apos;m currently pursuing a degree in Computer Science at Lagos State University, now in my final year. My
 					journey in the world of technology has been both exciting and challenging.
 				</p>
-			</div>
+			</Slide>
 		</div>
 	);
 };
@@ -26,18 +26,13 @@ const AboutSlice1 = () => {
 const AboutSlice2 = () => {
 	return (
 		<section className="flex items-center md:gap-x-10 gap-y-10 md:my-28 my-16 flex-col-reverse md:flex-row">
-			<div className="w-full text-center md:text-left">
-				<h2
-					className="
-                text-2xl font-semibold"
-				>
-					Collaborations ♻
-				</h2>
+			<Slide towards="left" delay={0.5} className="w-full text-center md:text-left">
+				<h2 className="text-2xl font-semibold">Collaborations ♻</h2>
 				<p className="mt-3">
 					I have worked with talented teams to create visually stunning websites for businesses and other exciting
 					projects. I am a determined individual who prides myself on my tenacity when it comes to completing tasks.
 				</p>
-			</div>
+			</Slide>
 
 			<div className="w-full">
 				<Image className="w-full h-full" src="/collaboration.svg" alt="Team Collaboration" width={1000} height={1000} />
@@ -52,7 +47,7 @@ const AboutSlice3 = () => {
 			<div className="w-full rounded-2xl overflow-hidden">
 				<Image src="/fun_moments.svg" alt="fun moments" width={1000} height={1000} />
 			</div>
-			<div className="w-full text-center md:text-left">
+			<Slide towards="right" delay={0.5} className="w-full text-center md:text-left">
 				<h2 className="text-2xl font-semibold">
 					What I do for fun beyond coding <span className="font-light">〰</span>
 				</h2>
@@ -64,7 +59,7 @@ const AboutSlice3 = () => {
 					Connecting with friends and family is another source of happiness for me. Oh, and I can&apos;t forget to
 					mention my enthusiasm for anime &mdash; it&apos;s a delightful escape!
 				</p>
-			</div>
+			</Slide>
 		</div>
 	);
 };
@@ -97,7 +92,7 @@ const AboutMe = () => {
 		},
 	];
 	return (
-		<div className="lg:w-[60%] text-stone-700 dark:text-stone-400">
+		<Slide delay={0.5} towards="left" className="lg:w-[60%] text-stone-700 dark:text-stone-400">
 			<h1 className="sm:text-5xl text-4xl font-bold mt-5">I&apos;m Blossom Obasi.</h1>
 			<div className="mt-6">
 				<p>
@@ -162,7 +157,7 @@ const AboutMe = () => {
 					</ul>
 				</div>
 			</div>
-		</div>
+		</Slide>
 	);
 };
 
@@ -180,15 +175,15 @@ const AboutPage = () => {
 			<div className="flex lg:flex-row flex-col-reverse justify-between lg:items-start items-center gap-10">
 				<AboutMe />
 
-				<div className="lg:w-[40%] w-full">
+				<Slide className="lg:w-[40%] w-full" delay={0.5} towards="right">
 					<Image
 						src="/images/blossomobasi.jpg"
 						alt="Blossom Obasi"
 						height={500}
 						width={500}
-						className="rounded-2xl w-auto"
+						className="rounded-2xl w-full"
 					/>
-				</div>
+				</Slide>
 			</div>
 
 			<AboutSlice1 />
