@@ -7,6 +7,7 @@ import TextHeader from "@/components/TextHeader";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
 import { Metadata } from "next";
+import { Slide } from "../../../animation/Slide";
 
 export const metadata: Metadata = {
 	title: "Projects | Blossom Obasi",
@@ -53,7 +54,7 @@ const ProjectsPage = () => {
 								</span>
 							)}
 						</Link>
-						<div className="flex-1">
+						<Slide className="flex-1" towards={i % 2 === 0 ? "right" : "left"} delay={i * 0.1}>
 							<h2 className="text-2xl font-semibold">{project.title}</h2>
 							<p className="mt-5 mb-2 text-sm text-stone-700 dark:text-stone-500">{project.content}</p>
 
@@ -86,7 +87,7 @@ const ProjectsPage = () => {
 									</Icon>
 								</div>
 							)}
-						</div>
+						</Slide>
 					</div>
 				))}
 			</div>
