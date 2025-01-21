@@ -148,11 +148,13 @@ const AboutMe = () => {
 
 					<ul className="space-y-5">
 						{softSkill.map((skill, index) => (
-							<li key={index} className="flex">
-								<p>
-									<span className="font-semibold">{skill.title}:</span> {skill.description}
-								</p>
-							</li>
+							<Slide key={index} towards={index % 2 === 0 ? "left" : "right"} delay={index * 0.1}>
+								<li className="flex">
+									<p>
+										<span className="font-semibold">{skill.title}:</span> {skill.description}
+									</p>
+								</li>
+							</Slide>
 						))}
 					</ul>
 				</div>
