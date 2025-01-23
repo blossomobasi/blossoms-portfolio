@@ -179,11 +179,13 @@ const AboutPage = () => {
 
 				<Slide className="lg:w-[40%] w-full" delay={0.5} towards="right">
 					<Image
-						src="/images/blossomobasi.jpg"
+						src="/images/blossomobasi.png"
 						alt="Blossom Obasi"
 						height={500}
 						width={500}
-						className="rounded-2xl w-full"
+						quality={100}
+						priority
+						className="rounded-2xl w-full border-5 border-black"
 					/>
 				</Slide>
 			</div>
