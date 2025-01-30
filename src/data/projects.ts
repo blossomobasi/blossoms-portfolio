@@ -44,7 +44,7 @@ export const projects: IProjects[] = [
 		githubLink: "https://github.com/blossomobasi/sesto-elemento",
 	}),
 	createProject({
-		href: "https://marvellous-childcare.vercel.app/",
+		href: "https://www.marvellouskids.co.uk",
 		src: "/images/marvellous-childcare.png",
 		alt: "Marvellous Childcare Project",
 		title: "Marvellous Childcare - Where Little Dreams Begin and Families Thrive",
