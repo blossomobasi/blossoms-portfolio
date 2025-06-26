@@ -34,6 +34,16 @@ export const projects: IProjects[] = [
 		githubLink: "https://github.com/blossomobasi/organic_foodie_ecommerce",
 	}),
 	createProject({
+		href: "https://lemonade-landing-two.vercel.app/",
+		src: "/images/lemonade-landing-project.png",
+		alt: "Lemonade Project",
+		title: "Lemonade - AI-driven Wellness Platform",
+		content:
+			"Lemonade is an AI-driven wellness platform that combines mental health and self-care with playful interaction.",
+		stacks: ["React", "Next.js", "Tailwind CSS", "TypeScript", "React Query"],
+		githubLink: "https://github.com/blossomobasi/lemonade-landing",
+	}),
+	createProject({
 		href: "https://sesto-elemento.vercel.app/",
 		src: "/images/sesto_elemento.png",
 		alt: "Sesto Elemento Project",
