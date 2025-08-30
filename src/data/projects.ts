@@ -78,6 +78,16 @@ export const projects: IProjects[] = [
 		githubLink: "https://github.com/blossomobasi/blogssom",
 	}),
 	createProject({
+		href: "https://tridehq-clone.vercel.app/",
+		src: "/images/tridehq-clone.png",
+		alt: "Tridehq clone Project",
+		title: "Tridehq-clone - Banking made easy for churches and ministries",
+		stacks: ["React", "Tailwind CSS", "Context API"],
+		content:
+			"Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
+		githubLink: "https://github.com/blossomobasi/tridehq-clone",
+	}),
+	createProject({
 		href: "https://www.chowgoo.com/",
 		src: "/images/chowgoo.png",
 		alt: "Chowgoo Project",
@@ -87,26 +97,6 @@ export const projects: IProjects[] = [
 		content:
 			"Chowgoo is a website that empowers users to set the pace in delivering food, ensuring that every order reaches its destination with unparalleled speed and efficiency.",
 		githubLink: "https://github.com/blossomobasi/chow-frontend",
-	}),
-	createProject({
-		href: "https://pluralcode-test-app.vercel.app/",
-		src: "/images/pluralcode-test-project.png",
-		alt: "Plural Code Test Project",
-		title: "Plural Code Test App",
-		stacks: ["React", "Nextjs", "Tailwind CSS", "TypeScript", "Context API"],
-		content:
-			"This project includes concepts like responsive design, API integration, filtering, and sorting, state management, and more.",
-		githubLink: "https://github.com/blossomobasi/pluralcode-test-app",
-	}),
-	createProject({
-		href: "https://tridehq-clone.vercel.app/",
-		src: "/images/tridehq-clone.png",
-		alt: "Tridehq clone Project",
-		title: "Tridehq-clone - Banking made easy for churches and ministries",
-		stacks: ["React", "Tailwind CSS", "Context API"],
-		content:
-			"Tride helps you receive funds faster from your members and donors with dedicated bank accounts and online payment options.",
-		githubLink: "https://github.com/blossomobasi/tridehq-clone",
 	}),
 	createProject({
 		title: "Coming Soon",
