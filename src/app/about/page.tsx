@@ -15,8 +15,9 @@ const AboutSlice1 = () => {
 			<Slide towards="right" delay={0.5} className="w-full text-center md:text-left">
 				<h2 className="text-2xl font-semibold">A dedicated Developer based in Lagos, Nigeria 📍</h2>
 				<p className="mt-3">
-					I&apos;m currently pursuing a degree in Computer Science at Lagos State University, now in my final year. My
-					journey in the world of technology has been both exciting and challenging.
+					I hold a B.Sc degree from Lagos State University. Throughout my academic journey, I&apos;ve navigated exciting
+					challenges in technology and developed expertise in full-stack development, working with modern web
+					technologies and frameworks.
 				</p>
 			</Slide>
 		</div>
