@@ -180,7 +180,7 @@ const AboutPage = () => {
 
 				<Slide className="lg:w-[40%] w-full" delay={0.5} towards="right">
 					<Image
-						src="/images/blossomobasi.png"
+						src="/images/blossomobasi.jpeg"
 						alt="Blossom Obasi"
 						height={500}
 						width={500}
